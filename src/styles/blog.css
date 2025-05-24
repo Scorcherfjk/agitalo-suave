@@ -1,0 +1,37 @@
+@import "./global.css";
+
+article { 
+  @apply bg-gray-50 py-5;
+}
+
+article > * {
+  @apply mx-5 sm:mx-10 xl:mx-auto max-w-screen-xl;
+}
+
+article h1 {
+  @apply text-3xl my-5;
+}
+
+article h2 {
+  @apply text-2xl my-5 font-bold;
+}
+
+article h3 {
+  @apply text-xl my-5 font-medium;
+}
+
+article p {
+  @apply my-5 mx-5 text-justify;
+}
+
+article a {
+  @apply text-blue-950 hover:underline;
+}
+
+article ul {
+  @apply list-disc list-inside;
+}
+
+article ol {
+  @apply list-decimal list-inside;
+}
