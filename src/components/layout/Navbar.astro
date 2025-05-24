@@ -1,0 +1,100 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<header class="bg-background-alt">
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between">
+      <div class="md:flex md:items-center md:gap-12">
+        <a class="block text-blue-950" href="/">
+          <span class="sr-only">Home</span>
+          <Icon name="logo" class="h-10 w-auto" />
+        </a>
+      </div>
+
+      <div id="desktop" class="hidden md:block">
+        <nav aria-label="Global">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a
+                class="text-blue-950 transition hover:text-blue-950/75"
+                href="/recetas"
+              >
+                Recetas
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-blue-950 transition hover:text-blue-950/75"
+                href="/bitacora"
+              >
+                Bitácora
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-blue-950 transition hover:text-blue-950/75"
+                href="/tips"
+              >
+                Tips
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-blue-950 transition hover:text-blue-950/75"
+                href="/legal/sobre-mi"
+              >
+                Sobre mi
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="mobile" class="block md:hidden">
+        <button
+          class="rounded-sm bg-gray-100 p-2 text-blue-950 transition hover:text-blue-950/75"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="absolute top-16 left-0 w-full bg-white px-4 py-4 shadow-md md:hidden z-10 hidden"
+      >
+        <nav aria-label="Mobile">
+          <ul class="flex flex-col gap-4 text-sm">
+            <li><a href="/recetas" class="text-blue-950">Recetas</a></li>
+            <li><a href="/bitacora" class="text-blue-950">Bitácora</a></li>
+            <li><a href="/tips" class="text-blue-950">Tips</a></li>
+            <li><a href="/legal/sobre-mi" class="text-blue-950">Sobre mi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.querySelector("#mobile button");
+  const menu = document.querySelector("#mobile-menu");
+
+  btn?.addEventListener("click", () => {
+    menu?.classList.toggle("hidden");
+  });
+</script>
