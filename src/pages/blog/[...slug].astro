@@ -1,21 +1,41 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
-import { render } from 'astro:content';
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import { formatDate } from "../../utils";
 
-export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
-}
-type Props = CollectionEntry<'blog'>;
+export const getStaticPaths = (async () => {
+  const blogPosts = await getCollection("blog");
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
 
-const post = Astro.props;
-const { Content } = await render(post);
+const { post } = Astro.props;
+const { title, image, date, excerpt, tags } = post.data;
+
+const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
-	<Content />
-</BlogPost>
+<BlogLayout title={title} description={excerpt} tags={tags} image={image}>
+  <Image alt={title} src={image} class="object-cover w-full h-[350px]" />
+  <article>
+    <div class="mx-5">
+      <a href="/blog">
+        <div class="inline-flex items-center gap-2 mt-5 text-blue-950">
+          <Icon name="arrow-right" class="w-5 h-5 rotate-180 inline" /> Volver al
+          Blog
+        </div>
+      </a>
+      <h1 class="text-3xl">{title}</h1>
+      <div>
+        <span class="text-xs text-gray-500">{formatDate(date)}</span>
+      </div>
+
+      <Content />
+    </div>
+  </article>
+</BlogLayout>
