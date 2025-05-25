@@ -1,7 +1,43 @@
 ---
+import CallToAction from "../components/CallToAction.astro";
+import Hero from "../components/Hero.astro";
+import AboutIt from "../components/AboutIt.astro";
+import BlogEntries from "../components/BlogEntries.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import type { CTA } from "../interfaces";
+
+import cta1 from "../assets/cta-index-1.avif";
+import cta2 from "../assets/cta-index-2.avif";
+import FeaturedReceipe from "../components/FeaturedReceipe.astro";
+
+const ctas: CTA[] = [
+  {
+    title: "Explora el mundo de los cócteles",
+    description:
+      "Un blog donde aprendo a preparar tragos, comparto recetas caseras y recojo tips con onda. Desde el shaker de casa, sin prisa, con sabor.",
+    imgUrl: cta1, // reemplaza con tu imagen real
+    reverse: false,
+    eager: true,
+  },
+  {
+    title: "Bitácora coctelera",
+    description:
+      "Apuntes de cursos, errores que me enseñaron algo, y momentos agitados que merecen ser contados. Agítalo Suave no es solo recetas, también es experiencia.",
+    imgUrl: cta2, // reemplaza con tu imagen real
+    reverse: true,
+    eager: false,
+  },
+];
 ---
 
 <MainLayout title="Inicio">
-  <p>Hello world</p>
+  <Hero
+    title="Agítalo Suave"
+    description="Explorando el mundo de los cócteles, a mi ritmo"
+  />
+  <AboutIt />
+  <CallToAction {...ctas[0]} />
+  <BlogEntries />
+  <CallToAction {...ctas[1]} />
+  <FeaturedReceipe />
 </MainLayout>

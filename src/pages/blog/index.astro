@@ -1,8 +1,24 @@
 ---
+import BlogCard from "../../components/BlogCard.astro";
+import Hero from "../../components/Hero.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 
 const blogPosts = await getCollection("blog");
 ---
 
-<MainLayout title="Blog" />
+<MainLayout title="Blog">
+  <Hero
+    title="Agítalo Suave"
+    description="Explorando la coctelería casera, un trago a la vez."
+  />
+  <section class="bg-background">
+    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <div
+        class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
+      >
+        {blogPosts.map((post) => <BlogCard post={post} />)}
+      </div>
+    </div>
+  </section>
+</MainLayout>

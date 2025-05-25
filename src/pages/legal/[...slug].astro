@@ -1,0 +1,44 @@
+---
+import "../../styles/global.css";
+import "../../styles/blog.css";
+
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import { formatDate } from "../../utils";
+import Alert from "../../components/Alert.astro";
+
+export const getStaticPaths = (async () => {
+  const legalPage = await getCollection("legal");
+  return legalPage.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const { title, description, date, draft } = page.data;
+
+const { Content } = await page.render();
+---
+
+<MainLayout title={title} description={description}>
+  <article>
+    <div class="mx-5">
+      <h1 class="text-3xl">{title}</h1>
+      <div>
+        <span class="text-xs text-gray-500">{formatDate(date)}</span>
+      </div>
+
+      {
+        draft && (
+          <Alert
+            title="En Construccion"
+            description="Esta página no ha sido completada, por lo que la información puede presentar errores"
+          />
+        )
+      }
+      <Content />
+    </div>
+  </article>
+</MainLayout>
