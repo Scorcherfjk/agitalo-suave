@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import type { CTA } from "../interfaces";
+
+interface Props extends CTA {}
+
+const { title, description, imgUrl, reverse, eager } = Astro.props;
+
+const positions = ["order-1", "order-2"];
+const [first, second] = reverse ? positions.reverse() : positions;
+---
+
+<section
+  class="sm:py-10 overflow-hidden bg-background sm:grid sm:grid-cols-2 sm:items-center"
+>
+  <div class:list={[first, "p-8 md:p-12 lg:px-16 lg:py-24"]}>
+    <div class="mx-auto max-w-xl text-center sm:text-left">
+      <h2 class="text-2xl font-bold text-complementary md:text-3xl">
+        {title}
+      </h2>
+
+      <p class="text-gray-500 mt-4 text-justify sm:text-left">
+        {description}
+      </p>
+    </div>
+  </div>
+
+  <Image
+    alt="test"
+    src={imgUrl}
+    quality={"high"}
+    loading={eager ? "eager" : "lazy"}
+    class:list={[
+      second,
+      reverse
+        ? "sm:rounded-r-[30px] md:rounded-r-[60px]"
+        : "sm:rounded-l-[30px] md:rounded-l-[60px]",
+      "h-80 w-full object-cover sm:self-end",
+    ]}
+  />
+</section>

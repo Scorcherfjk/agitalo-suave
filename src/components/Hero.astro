@@ -1,0 +1,63 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  hasButtons?: boolean;
+  primaryButtonText?: string;
+  secondaryButtonText?: string;
+}
+
+const {
+  title,
+  description,
+  hasButtons = true,
+  primaryButtonText,
+  secondaryButtonText,
+} = Astro.props;
+---
+
+<section
+  class="relative bg-[url(../assets/hero.avif)] bg-cover bg-center bg-no-repeat"
+>
+  <div
+    class="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 sm:bg-gradient-to-r"
+  >
+  </div>
+
+  <div
+    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-full lg:items-center lg:px-8"
+  >
+    <div class="max-w-xl text-center sm:text-left">
+      <h1 class="text-6xl font-extrabold text-white font-cursive">
+        {title}
+      </h1>
+
+      <p class="mt-4 max-w-lg text-white sm:text-xl/relaxed">
+        {description}
+      </p>
+      {
+        hasButtons && (
+          <div class="mt-8 flex flex-wrap gap-4 text-center">
+            {primaryButtonText && (
+              <a
+                href="/academy"
+                class="block w-full rounded-sm bg-primary px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-blue-900 focus:ring-3 focus:outline-hidden sm:w-auto"
+              >
+                {primaryButtonText}
+              </a>
+            )}
+
+            {secondaryButtonText && (
+              <a
+                href="/contact"
+                class="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-primary shadow-sm hover:text-blue-900 focus:ring-3 focus:outline-hidden sm:w-auto"
+              >
+                {secondaryButtonText}
+              </a>
+            )}
+          </div>
+        )
+      }
+    </div>
+  </div>
+</section>
