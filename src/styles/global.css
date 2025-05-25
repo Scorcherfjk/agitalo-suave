@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@theme {
+  --color-black: #2F2E41;
+  --color-background: #faf4f0;
+  --color-primary: #1f2937;
+  --color-background-alt: #fde2e4;
+  --color-accent: #be185d;
+  --color-complementary: #6a0572;
+
+  --font-cursive: 'Dancing Script', cursive;
+}
+
+.font-cursiva {
+  font-family: var(--font-cursiva);
+}
+
+.color1 {color: #5ba2df;}
+.color2 {color: #f499e5;}
+.color3 {color: #f8c1b1;}
+.color4 {color: #f6eda9;}
+.color5 {color: #f1efe8;}
+
 html {
   scroll-behavior: smooth;
+  background: #faf4f0;
 }
