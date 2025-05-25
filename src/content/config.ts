@@ -22,6 +22,7 @@ const legalCollection = defineCollection({
       title: z.string(),
       description: z.string(),
       date: z.date(),
+      draft: z.boolean().optional().default(false),
     }),
 });
 

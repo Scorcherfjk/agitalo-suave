@@ -1,10 +1,11 @@
 ---
-title: "Pisco Sour Clásico"
-slug: pisco-sour-clasico
-date: 2025-05-10
-type: "receta"
-tags: ["pisco", "sour", "clásico", "cóctel peruano"]
-excerpt: "La receta tradicional del Pisco Sour, paso a paso, con notas personales."
+title: "Lo que aprendí en mi primer curso de coctelería"
+slug: "primer-curso-cocteleria"
+date: 2025-04-15
+updated: 2025-04-20
+type: "bitacora"
+tags: ["curso", "aprendizaje", "experiencia", "principiante"]
+excerpt: "Un resumen de lo que me dejó mi primer acercamiento serio al mundo de la coctelería, desde el shaker hasta el respeto por cada ingrediente."
 image: "images/post-01.avif"
 draft: false
 ---
