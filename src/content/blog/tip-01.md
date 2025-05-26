@@ -7,7 +7,7 @@ type: "tip"
 tags: ["sirope", "preparaciones", "endulzante", "trucos de barra"]
 excerpt: "Una guía rápida para preparar sirope simple en casa y mejorar la calidad de tus cócteles sin complicarte."
 image: "images/tip-01.avif"
-draft: true
+draft: false
 ---
 
 El sirope simple es uno de esos básicos que todo bar —casero o profesional— debería tener. Es fácil de hacer, económico y mejora de inmediato la textura y el equilibrio de tus cócteles.
