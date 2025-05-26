@@ -7,11 +7,12 @@ const blogCollection = defineCollection({
       title: z.string(),
       date: z.date(),
       updated: z.date().optional(),
-      type: z.enum(["receta", "bitacora", "tip", "tecnica"]),
+      type: z.enum(["receta", "bitacora", "tip"]),
       tags: z.array(z.string()),
       excerpt: z.string(),
       image: image(),
       draft: z.boolean().optional().default(false),
+      featured: z.boolean().optional().default(false),
     }),
 });
 
