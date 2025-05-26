@@ -4,11 +4,13 @@ import { formatDate } from "../utils";
 import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  post: CollectionEntry<'blog'>;
+  post: CollectionEntry<"blog">;
 }
 
-const { post: { data, slug } } = Astro.props;
-const { title, image, date, excerpt } = data;
+const {
+  post: { data, slug },
+} = Astro.props;
+const { title, image, date, excerpt, type } = data;
 ---
 
 <article
@@ -25,18 +27,16 @@ const { title, image, date, excerpt } = data;
 
   <div class="bg-background p-4 sm:p-6">
     <time class="block text-xs text-gray-500">
-      { formatDate(date) }
+      {formatDate(date)}
     </time>
 
-    <a href={`/blog/post/${slug}`}>
+    <a href={`/blog/${type}/${slug}`}>
       <h3 class="mt-0.5 text-lg text-primary">{title}</h3>
     </a>
 
     {
       excerpt && (
-        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-          {excerpt}
-        </p>
+        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">{excerpt}</p>
       )
     }
   </div>
