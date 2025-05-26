@@ -9,6 +9,7 @@ import type { CTA } from "../interfaces";
 import cta1 from "../assets/cta-index-1.avif";
 import cta2 from "../assets/cta-index-2.avif";
 import FeaturedReceipe from "../components/FeaturedReceipe.astro";
+import ContactForm from "../components/ContactForm.astro";
 
 const ctas: CTA[] = [
   {
@@ -40,4 +41,5 @@ const ctas: CTA[] = [
   <BlogEntries />
   <CallToAction {...ctas[1]} />
   <FeaturedReceipe />
+  <ContactForm />
 </MainLayout>
