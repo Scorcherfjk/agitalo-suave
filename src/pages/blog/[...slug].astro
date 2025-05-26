@@ -5,28 +5,29 @@ import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 import { formatDate } from "../../utils";
+import Alert from "../../components/Alert.astro";
 
 export const getStaticPaths = (async () => {
   const blogPosts = await getCollection("blog");
   return blogPosts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: `${post.data.type}/${post.slug}` },
     props: { post },
   }));
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
-const { title, image, date, excerpt, tags } = post.data;
+const { title, image, date, excerpt, tags, draft } = post.data;
 
 const { Content } = await post.render();
 ---
 
 <BlogLayout title={title} description={excerpt} tags={tags} image={image}>
   <Image alt={title} src={image} class="object-cover w-full h-[350px]" />
-  <article>
+  <article class="bg-background">
     <div class="mx-5">
       <a href="/blog">
         <div class="inline-flex items-center gap-2 mt-5 text-primary">
-          <Icon name="arrow-right" class="w-5 h-5 rotate-180 inline" /> Volver al
+          <Icon name="arrow-right" class="w-5 h-5 rotate-180 inline" /> Ir al
           Blog
         </div>
       </a>
@@ -34,6 +35,15 @@ const { Content } = await post.render();
       <div>
         <span class="text-xs text-gray-500">{formatDate(date)}</span>
       </div>
+
+      {
+        draft && (
+          <Alert
+            title="En Construccion"
+            description="Esta página no ha sido completada, por lo que la información puede presentar errores"
+          />
+        )
+      }
 
       <Content />
     </div>
