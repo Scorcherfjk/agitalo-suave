@@ -16,28 +16,30 @@ const { title, image, date, excerpt, type } = data;
 <article
   class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg bg-background"
 >
-  <Image
-    alt={title}
-    src={image}
-    class="h-56 w-full object-cover"
-    width={400}
-    height={400}
-    quality="high"
-  />
+  <a href={`/blog/${type}/${slug}`} aria-label={title}>
+    <Image
+      alt={title}
+      src={image}
+      class="h-56 w-full object-cover"
+      width={400}
+      height={400}
+      quality="high"
+    />
 
-  <div class="bg-background p-4 sm:p-6">
-    <time class="block text-xs text-gray-500">
-      {formatDate(date)}
-    </time>
+    <div class="bg-background p-4 sm:p-6">
+      <time class="block text-xs text-gray-500">
+        {formatDate(date)}
+      </time>
 
-    <a href={`/blog/${type}/${slug}`}>
       <h3 class="mt-0.5 text-lg text-primary">{title}</h3>
-    </a>
 
-    {
-      excerpt && (
-        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">{excerpt}</p>
-      )
-    }
-  </div>
+      {
+        excerpt && (
+          <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+            {excerpt}
+          </p>
+        )
+      }
+    </div>
+  </a>
 </article>
