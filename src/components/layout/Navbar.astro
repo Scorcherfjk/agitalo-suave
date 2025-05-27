@@ -1,5 +1,12 @@
 ---
 import { Icon } from "astro-icon/components";
+
+const links = [
+  { url: "/recetas", text: "Recetas" },
+  { url: "/bitacora", text: "Bitácora" },
+  { url: "/tips", text: "Tips" },
+  { url: "/legal/sobre-mi", text: "Sobre mi" },
+];
 ---
 
 <header class="bg-background">
@@ -8,54 +15,32 @@ import { Icon } from "astro-icon/components";
       <div class="md:flex md:items-center md:gap-12">
         <a class="block text-primary" href="/">
           <span class="sr-only">Home</span>
-          <Icon name="logo" class="h-10 w-auto" />
+          <Icon name="logo" class="h-14 w-auto" />
         </a>
       </div>
 
       <div id="desktop" class="hidden md:block">
         <nav aria-label="Global">
           <ul class="flex items-center gap-6 text-sm">
-            <li>
-              <a
-                class="text-primary transition hover:text-primary/75"
-                href="/recetas"
-              >
-                Recetas
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-primary transition hover:text-primary/75"
-                href="/bitacora"
-              >
-                Bitácora
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-primary transition hover:text-primary/75"
-                href="/tips"
-              >
-                Tips
-              </a>
-            </li>
-            <li>
-              <a
-                class="text-primary transition hover:text-primary/75"
-                href="/legal/sobre-mi"
-              >
-                Sobre mi
-              </a>
-            </li>
+            {
+              links.map((link) => (
+                <li>
+                  <a
+                    href={link.url}
+                    class="text-primary transition hover:text-primary/75"
+                  >
+                    {link.text}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </nav>
       </div>
 
       <div id="mobile" class="block md:hidden">
         <button
-          class="rounded-sm bg-gray-100 p-2 text-primary transition hover:text-primary/75"
+          class="rounded-sm bg-background-alt p-2 text-primary transition hover:text-primary/75"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,14 +60,22 @@ import { Icon } from "astro-icon/components";
 
       <div
         id="mobile-menu"
-        class="absolute top-16 left-0 w-full bg-white px-4 py-4 shadow-md md:hidden z-10 hidden"
+        class="absolute top-16 left-0 w-full bg-background px-4 py-4 shadow-md md:hidden z-10 hidden"
       >
         <nav aria-label="Mobile">
-          <ul class="flex flex-col gap-4 text-sm">
-            <li><a href="/recetas" class="text-primary">Recetas</a></li>
-            <li><a href="/bitacora" class="text-primary">Bitácora</a></li>
-            <li><a href="/tips" class="text-primary">Tips</a></li>
-            <li><a href="/legal/sobre-mi" class="text-primary">Sobre mi</a></li>
+          <ul class="flex flex-col text-sm">
+            {
+              links.map((link) => (
+                <li>
+                  <a
+                    href={link.url}
+                    class="block w-full py-2 pl-2 rounded-sm hover:bg-accent/5 text-primary mb-1"
+                  >
+                    {link.text}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </nav>
       </div>
