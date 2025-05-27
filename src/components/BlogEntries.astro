@@ -4,14 +4,18 @@ import BlogCard from "./BlogCard.astro";
 import { getCollection } from "astro:content";
 
 const blogPosts = await getCollection("blog");
-const blogEntries = blogPosts.slice(0, 3);
+const blogEntries = blogPosts
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
 ---
 
 <section class="bg-background-alt">
   <div class="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
     <div class="md:flex md:items-end md:justify-between">
       <div class="max-w-xl">
-        <h2 class="text-4xl font-bold tracking-tight text-complementary sm:text-5xl">
+        <h2
+          class="text-4xl font-bold tracking-tight text-complementary sm:text-5xl"
+        >
           Lo más reciente en el blog
         </h2>
       </div>
