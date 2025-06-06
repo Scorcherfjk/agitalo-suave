@@ -10,7 +10,7 @@ excerpt:
   que siempre me recuerda que los clásicos no fallan."
 image: "images/receta-01.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 El mojito fue uno de los primeros cócteles que me atreví a preparar en casa. Es simple, sí, pero cuando se hace bien, transmite frescura, equilibrio y un ritmo veraniego que funciona en cualquier momento del año.
