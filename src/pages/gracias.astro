@@ -1,0 +1,23 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import ContactForm from "../components/ContactForm.astro";
+import BlogEntries from "../components/BlogEntries.astro";
+---
+
+<MainLayout title="Contacto">
+  <Hero
+    title="Agítalo Suave"
+    description="Explorando el mundo de los cócteles, a mi ritmo"
+  />
+  <section class="py-12 text-center px-4 max-w-xl mx-auto">
+    <h1 class="text-3xl font-bold text-complementary">
+      ¡Gracias por tu mensaje!
+    </h1>
+    <p class="mt-4 text-lg text-muted-foreground">
+      Te responderé en cuanto pueda. Mientras tanto, sigue leyendo las últimas
+      entradas del blog o descubre nuevas ideas para agitar tu copa.
+    </p>
+  </section>
+  <BlogEntries />
+</MainLayout>
