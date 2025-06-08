@@ -1,5 +1,77 @@
 ---
 import { Icon } from "astro-icon/components";
+
+const RRSS = [
+  {
+    url: "https://www.facebook.com",
+    label: "Facebook",
+    icon: "facebook",
+  },
+  {
+    url: "https://www.instagram.com",
+    label: "Instagram",
+    icon: "instagram",
+  },
+  {
+    url: "https://www.tiktok.com",
+    label: "TikTok",
+    icon: "tiktok",
+  },
+];
+
+const links = [
+  {
+    title: "Blog",
+    children: [
+      {
+        url: "/recetas",
+        label: "Recetas",
+      },
+      {
+        url: "/bitacora",
+        label: "Bitácora",
+      },
+      {
+        url: "/tecnica",
+        label: "Técnica",
+      },
+      {
+        url: "/tips",
+        label: "Tips",
+      },
+    ],
+  },
+  {
+    title: "Acerca de",
+    children: [
+      {
+        url: "/legal/sobre-mi",
+        label: "Sobre mi",
+      },
+      {
+        url: "/contacto",
+        label: "Contacto",
+      },
+    ],
+  },
+  {
+    title: "Legal",
+    children: [
+      {
+        url: "/legal/politica-de-privacidad",
+        label: "Política de Privacidad",
+      },
+      {
+        url: "/legal/terminos-y-condiciones",
+        label: "Términos y Condiciones",
+      },
+      {
+        url: "/legal/exencion-de-responsabilidad",
+        label: "Exención de Responsabilidad",
+      },
+    ],
+  },
+];
 ---
 
 <footer class="bg-[#8c3f95]">
@@ -16,138 +88,60 @@ import { Icon } from "astro-icon/components";
               >Explorando el mundo de los cócteles, a mi ritmo</span
             >
           </p>
+          <p class="mt-5 font-thin">
+            Este sitio está dirigido a personas mayores de edad. El contenido
+            relacionado con bebidas alcohólicas es solo para fines informativos
+            y recreativos. Por favor, bebe con responsabilidad. <strong
+              >El consumo de alcohol es perjudicial para la salud.</strong
+            >
+          </p>
         </div>
         <ul class="mt-8 flex gap-6">
-          <li>
-            <a
-              href="https://www.facebook.com"
-              rel="noreferrer"
-              target="_blank"
-              class="text-white transition hover:text-rose-200"
-            >
-              <span class="sr-only">Facebook</span>
-              <Icon name="facebook" class="size-6" />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.instagram.com"
-              rel="noreferrer"
-              target="_blank"
-              class="text-white transition hover:text-rose-200"
-            >
-              <span class="sr-only">Instagram</span>
-              <Icon name="instagram" class="size-6" />
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.tiktok.com"
-              rel="noreferrer"
-              target="_blank"
-              class="text-white transition hover:text-rose-200"
-            >
-              <span class="sr-only">TikTok</span>
-              <Icon name="tiktok" class="size-6" />
-            </a>
-          </li>
+          {
+            RRSS.map((link) => (
+              <li>
+                <a
+                  href={link.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-white transition hover:text-rose-200"
+                >
+                  <span class="sr-only">{link.label}</span>
+                  <Icon name={link.icon} class="size-6" />
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
 
       <div
-        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3"
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
       >
-        <div>
-          <p class="font-medium text-white">Blog</p>
+        <div></div>
+        {
+          links.map((link) => (
+            <div>
+              <p class="font-medium text-white">{link.title}</p>
 
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a
-                href="/recetas"
-                class="text-white transition hover:text-rose-200"
-                >Recetas
-              </a>
-            </li>
-            <li>
-              <a
-                href="/bitacora"
-                class="text-white transition hover:text-rose-200"
-              >
-                Bitácora
-              </a>
-            </li>
-            <li>
-              <a
-                href="/tecnica"
-                class="text-white transition hover:text-rose-200"
-                >Técnica
-              </a>
-            </li>
-            <li>
-              <a href="/tips" class="text-white transition hover:text-rose-200">
-                Tips
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-medium text-white">Acerca de</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a
-                href="/legal/sobre-mi"
-                class="text-white transition hover:text-rose-200"
-                >Sobre mi
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contacto"
-                class="text-white transition hover:text-rose-200"
-                >Contacto
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="font-medium text-white">Legal</p>
-
-          <ul class="mt-6 space-y-4 text-sm">
-            <li>
-              <a
-                href="/legal/politica-de-privacidad"
-                class="text-white transition hover:text-rose-200"
-              >
-                Política de Privacidad
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="/legal/terminos-y-condiciones"
-                class="text-white transition hover:text-rose-200"
-              >
-                Términos y Condiciones
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="/legal/exencion-de-responsabilidad"
-                class="text-white transition hover:text-rose-200"
-              >
-                Exención de Responsabilidad
-              </a>
-            </li>
-          </ul>
-        </div>
+              <ul class="mt-6 space-y-4 text-sm">
+                {link.children.map((child) => (
+                  <li>
+                    <a
+                      href={child.url}
+                      class="text-white transition hover:text-rose-200"
+                    >
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
       </div>
     </div>
+
     <p class="text-xs text-white">
       &copy; 2025. Made with ❤️ by an enthusiastic bartender
     </p>
