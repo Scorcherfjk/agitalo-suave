@@ -5,7 +5,9 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import { getCollection } from "astro:content";
 
 const blogPosts = await getCollection("blog");
-const sortedBlogPosts = blogPosts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const sortedBlogPosts = blogPosts
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
 <MainLayout title="Blog">
