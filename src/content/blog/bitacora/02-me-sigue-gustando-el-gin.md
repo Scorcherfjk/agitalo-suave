@@ -1,13 +1,13 @@
 ---
 title: "¿Me sigue gustando el gin?"
 slug: "me-sigue-gustando-el-gin"
-date: 2025-06-15
-updated: 2025-06-15
+date: 2025-06-16
+updated: 2025-06-16
 type: "bitacora"
 tags: ["gin", "gusto", "paladar", "experiencia", "reflexión"]
 excerpt: "Durante años pensé que me gustaba el gin, pero al volver a probarlo me encontré con otra realidad. Una reflexión personal sobre cómo cambian los gustos y lo que realmente disfrutamos en un cóctel."
 image: "images/02-me-sigue-gustando-el-gin.avif"
-draft: true
+draft: false
 ---
 
 Hace poco preparé un Gin Tonic después de mucho tiempo sin probar gin. Recuerdo que cuando era más joven, el gin fue uno de los primeros destilados que probé. Lo tomaba mezclado con jugo de naranja o alguna bebida dulce. Era fuerte, claro, pero me gustaba. O eso pensaba.
