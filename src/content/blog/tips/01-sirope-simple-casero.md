@@ -6,7 +6,7 @@ updated: 2025-05-10
 type: "tip"
 tags: ["sirope", "preparaciones", "endulzante", "trucos de barra"]
 excerpt: "Una guía rápida para preparar sirope simple en casa y mejorar la calidad de tus cócteles sin complicarte."
-image: "images/tip-01.avif"
+image: "images/01-sirope-simple-casero.avif"
 draft: false
 ---
 

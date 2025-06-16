@@ -6,7 +6,7 @@ updated: 2025-04-20
 type: "bitacora"
 tags: ["curso", "aprendizaje", "experiencia", "principiante", "domestika"]
 excerpt: "Un resumen de lo que me dejó mi primer acercamiento serio al mundo de la coctelería, desde el shaker hasta el respeto por cada ingrediente."
-image: "images/bitacora-01.avif"
+image: "images/01-primer-curso-cocteleria.avif"
 draft: false
 ---
 

@@ -8,7 +8,7 @@ tags: ["ron", "menta", "refrescante", "clásico", "cóctel cubano"]
 excerpt:
   "Una receta de mojito fácil, casera y refrescante. El equilibrio perfecto entre acidez, dulzura y espuma. Esta es la receta
   que siempre me recuerda que los clásicos no fallan."
-image: "images/receta-01.avif"
+image: "images/01-mojito-clasico.avif"
 draft: false
 featured: false
 ---

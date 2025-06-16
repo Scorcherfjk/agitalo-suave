@@ -6,7 +6,7 @@ updated: 2025-06-14
 type: "tecnica"
 tags: ["vasos", "vidrio", "servicio", "presentación", "estructura"]
 excerpt: "No todos los cócteles caben en el mismo vaso —y no es solo por presentación. Conocer los tipos de vasos te ayuda a entender mejor cómo se construye y se sirve cada trago."
-image: "images/tecnica-02.avif"
+image: "images/02-tipos-de-vasos.avif"
 draft: false
 ---
 

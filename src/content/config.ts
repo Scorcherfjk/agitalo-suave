@@ -7,7 +7,7 @@ const blogCollection = defineCollection({
       title: z.string(),
       date: z.date(),
       updated: z.date().optional(),
-      type: z.enum(["receta", "bitacora","tecnica", "tip"]),
+      type: z.enum(["receta", "bitacora", "tecnica", "tip"]),
       tags: z.array(z.string()),
       excerpt: z.string(),
       image: image(),

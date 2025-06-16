@@ -7,9 +7,9 @@ type: "receta"
 tags:
   ["comparativo", "sake", "martini", "vodka", "gin", "experimento", "refinado"]
 excerpt: "Un cóctel elegante y directo, preparado en dos versiones: con gin y con vodka. Una comparación personal sobre cómo un mismo trago puede cambiar por completo con un solo ingrediente base."
-image: "images/receta-02.avif"
+image: "images/02-saketini-dos-versiones.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 El Saketini es un cóctel minimalista y directo. Mezcla sake con un destilado base, generalmente gin o vodka, y algún bitter aromático. Es un trago elegante, frío, con mucha presencia alcohólica y un sabor que no es para todo el mundo. Lo probé recientemente con una botella de sake que compré, y quise explorar cómo cambiaba el perfil del trago dependiendo del espíritu que usara.

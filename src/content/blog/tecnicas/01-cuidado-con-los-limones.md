@@ -6,7 +6,7 @@ updated: 2025-05-27
 type: "tecnica"
 tags: ["ácido", "ingredientes", "errores", "equilibrio", "sabor"]
 excerpt: "Una reflexión técnica y personal sobre el impacto real del tipo de limón que usas al preparar cócteles. Lo que parece un simple cítrico puede cambiarlo todo."
-image: "images/tecnica-01.avif"
+image: "images/01-cuidado-con-los-limones.avif"
 draft: false
 ---
 
