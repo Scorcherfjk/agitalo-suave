@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import { formatDate } from "../utils";
 import type { CollectionEntry } from "astro:content";
+import Badge from "./Badge.astro";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -10,13 +11,16 @@ export interface Props {
 const {
   post: { data, slug },
 } = Astro.props;
-const { title, image, date, excerpt, type } = data;
+const { title, image, date, excerpt, type, tags } = data;
+const hasComparative = tags.includes("comparativo");
 ---
 
 <article
-  class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg bg-background"
+  class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg bg-background relative"
 >
   <a href={`/blog/${type}/${slug}`} aria-label={title}>
+    {hasComparative && <Badge label="Comparativo" />}
+
     <Image
       alt={title}
       src={image}
