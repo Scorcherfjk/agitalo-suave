@@ -10,9 +10,7 @@ image: "images/03-libro-arte-de-la-mixologia.avif"
 draft: false
 ---
 
-Hace poco compré un libro titulado *El arte de la mixología*. La portada fue lo primero que me llamó la atención: elegante, oscura, con ese toque casi místico que sugiere que lo que hay dentro **son pociones, no solo tragos**. En ese momento pensé: *“Este libro tiene que enseñarme algo profundo.”*
-
-> Estábamos en una librería, revisando estantes, cuando lo vi. Me detuve porque la portada me pareció fascinante. Sin decir mucho más, mi esposa lo tomó y decidió regalármelo. Así, sin aviso, como quien sabe que eso te va a hacer feliz.
+Hace poco llegó a mis manos un libro titulado *El arte de la mixología*. La portada fue lo primero que me llamó la atención: elegante, oscura, con ese toque casi místico que sugiere que lo que hay dentro **son pociones, no solo tragos**. Estábamos en una librería, revisando estantes, cuando lo vi. Me detuve porque la portada me pareció fascinante. Sin decir mucho más, mi esposa lo tomó y decidió regalármelo. Así, sin aviso, como quien sabe que eso te va a hacer feliz.
 
 Y sí, es llamativo. Muy llamativo. Pero lo que encontré al leerlo no fue exactamente lo que esperaba.
 
