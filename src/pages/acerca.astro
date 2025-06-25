@@ -1,0 +1,80 @@
+---
+import CallToAction from "../components/CallToAction.astro";
+import Hero from "../components/Hero.astro";
+import AboutIt from "../components/AboutIt.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import type { CTA } from "../interfaces";
+
+import cta1 from "../assets/cta-index-1.avif";
+import cta2 from "../assets/cta-index-2.avif";
+import Timeline, { type Point } from "../components/Timeline.astro";
+import Announcement from "../components/Announcement.astro";
+import type { ACTION_ERROR_CODES } from "astro:actions";
+
+const ctas: CTA[] = [
+  {
+    title: "Misión",
+    description:
+      "Compartir experiencias reales, aprendizajes y recetas caseras de coctelería para ayudar a otros (y a uno mismo) a entender lo que hay detrás de cada trago, desde el gusto personal hasta la técnica, siempre con responsabilidad y buen ritmo.",
+    imgUrl: cta1, // reemplaza con tu imagen real
+    reverse: false,
+    eager: true,
+  },
+  {
+    title: "Visión",
+    description:
+      "Construir un espacio de referencia para quienes quieren aprender coctelería desde cero, sin pretensiones, disfrutando el proceso, con criterio propio, respeto por el alcohol y sabor auténtico en cada mezcla.",
+    imgUrl: cta2, // reemplaza con tu imagen real
+    reverse: true,
+    eager: false,
+    secondary: true,
+  },
+];
+
+const points: Point[] = [
+  {
+    title: "Curiosidad antes que perfección",
+    description:
+      "Cada trago es una oportunidad para aprender algo nuevo. No buscamos la receta definitiva, sino las preguntas que nacen cuando algo no sale como esperabas. Aquí se vale experimentar, equivocarse y volver a agitar.",
+  },
+  {
+    title: "Transparencia sin adornos",
+    description:
+      "Compartimos lo que realmente vivimos: desde un cóctel que salió increíble, hasta el que se arruinó por culpa de un limón demasiado ácido. Nada está disfrazado. Lo bueno y lo no tan bueno tienen su espacio.",
+  },
+  {
+    title: "Autenticidad como base",
+    description:
+      "No repetimos lo que dicen los libros sin pasarlo por nuestro paladar. Nos interesa más lo que sentimos al probar un trago que si usamos exactamente el vaso correcto. Cada quien tiene su forma, y esta es la nuestra.",
+  },
+  {
+    title: "Respeto por el alcohol y por quien lo consume",
+    description:
+      "No promovemos excesos. La coctelería es disfrute, no escapismo. Por eso hablamos con responsabilidad, entendiendo que un buen trago es también el contexto, el ritmo y el momento.",
+  },
+  {
+    title: "Aprendizaje constante",
+    description:
+      "No hay un punto de llegada. Solo pasos. A veces desde un curso, a veces desde un error. A veces desde una botella nueva, a veces desde una conversación. El punto es seguir aprendiendo, siempre con ganas y sin prisa.",
+  },
+];
+
+const announcement = {
+  message: "¿Quieres saber quién está detrás de todo esto?",
+  link: {
+    url: "/legal/sobre-mi",
+    text: "Lee más sobre mí",
+  },
+};
+---
+
+<MainLayout title="Sobre">
+  <Hero
+    title="Agítalo Suave"
+    description="Explorando el mundo de los cócteles, a mi ritmo"
+  />
+  <AboutIt />
+  {ctas.map((cta) => <CallToAction {...cta} />)}
+  <Timeline title="Nuestros valores" points={points} />
+  <Announcement {...announcement} />
+</MainLayout>
