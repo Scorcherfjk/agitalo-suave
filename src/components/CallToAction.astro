@@ -4,14 +4,15 @@ import type { CTA } from "../interfaces";
 
 interface Props extends CTA {}
 
-const { title, description, imgUrl, reverse, eager } = Astro.props;
+const { title, description, imgUrl, reverse, eager, secondary } = Astro.props;
 
 const positions = ["order-1", "order-2"];
 const [first, second] = reverse ? positions.reverse() : positions;
 ---
 
 <section
-  class="sm:py-10 overflow-hidden bg-background sm:grid sm:grid-cols-2 sm:items-center"
+  class="sm:py-10 overflow-hidden sm:grid sm:grid-cols-2 sm:items-center"
+  class:list={[secondary ? "bg-background-alt" : "bg-background"]}
 >
   <div class:list={[first, "p-8 md:p-12 lg:px-16 lg:py-24"]}>
     <div class="mx-auto max-w-xl text-center sm:text-left">
@@ -19,7 +20,7 @@ const [first, second] = reverse ? positions.reverse() : positions;
         {title}
       </h2>
 
-      <p class="text-gray-500 mt-4 text-justify sm:text-left">
+      <p class="text-gray-800 mt-4 text-justify sm:text-left">
         {description}
       </p>
     </div>

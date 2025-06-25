@@ -4,4 +4,5 @@ export interface CTA {
   imgUrl: any;
   reverse?: boolean;
   eager?: boolean;
+  secondary?: boolean;
 }
