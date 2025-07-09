@@ -21,6 +21,10 @@
 .color4 {color: #f6eda9;}
 .color5 {color: #f1efe8;}
 
+.cols-sm-3 {@apply sm:grid-cols-3;}
+.cols-sm-4 {@apply sm:grid-cols-4;}
+.cols-sm-5 {@apply sm:grid-cols-5;}
+
 html {
   scroll-behavior: smooth;
   background: #faf4f0;

@@ -6,6 +6,7 @@ import { Icon } from "astro-icon/components";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 import { formatDate } from "../../utils";
 import Alert from "../../components/Alert.astro";
+import BlogEntries from "../../components/BlogEntries.astro";
 
 export const getStaticPaths = (async () => {
   const blogPosts = await getCollection("blog");
@@ -27,8 +28,7 @@ const { Content } = await post.render();
     <div class="mx-5">
       <a href="/blog">
         <div class="inline-flex items-center gap-2 mt-5 text-primary">
-          <Icon name="arrow-right" class="w-5 h-5 rotate-180 inline" /> Ir al
-          Blog
+          <Icon name="arrow-right" class="w-5 h-5 rotate-180 inline" /> Ir al Blog
         </div>
       </a>
       <h1 class="text-3xl">{title}</h1>
@@ -48,4 +48,5 @@ const { Content } = await post.render();
       <Content />
     </div>
   </article>
+  <BlogEntries max={4} />
 </BlogLayout>

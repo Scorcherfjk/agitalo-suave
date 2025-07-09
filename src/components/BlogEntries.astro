@@ -3,10 +3,16 @@ import { Icon } from "astro-icon/components";
 import BlogCard from "./BlogCard.astro";
 import { getCollection } from "astro:content";
 
+interface Props {
+  max?: number;
+}
+
+const { max = 3 } = Astro.props;
+
 const blogPosts = await getCollection("blog");
 const blogEntries = blogPosts
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 3);
+  .slice(0, max);
 ---
 
 <section class="bg-background-alt">
@@ -30,7 +36,7 @@ const blogEntries = blogPosts
       </a>
     </div>
 
-    <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+    <div class:list={["mt-8 grid grid-cols-1 gap-4", `cols-sm-${max}`]}>
       {blogEntries.map((post) => <BlogCard post={post} />)}
     </div>
   </div>

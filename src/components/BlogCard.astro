@@ -15,7 +15,7 @@ const { title, image, date, excerpt, type, tags } = data;
 const hasComparative = tags.includes("comparativo");
 ---
 
-<article
+<section
   class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg bg-background relative"
 >
   <a href={`/blog/${type}/${slug}`} aria-label={title}>
@@ -46,4 +46,4 @@ const hasComparative = tags.includes("comparativo");
       }
     </div>
   </a>
-</article>
+</section>
