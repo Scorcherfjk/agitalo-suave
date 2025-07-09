@@ -39,3 +39,27 @@ article ol {
 article blockquote {
   @apply py-0.5 ml-3 text-gray-600 border-l-2 border-gray-600;
 }
+
+article .right-image-section {
+  @apply flex flex-col lg:flex-row items-center;
+}
+
+article .right-image-section img{
+  @apply max-w-full sm:max-w-sm;
+}
+
+article .left-image-section {
+  @apply flex flex-col md:flex-row-reverse items-center;
+}
+
+article .left-image-section h3 {
+  @apply text-accent;
+}
+
+article .left-image-section img{
+  @apply max-w-full sm:max-w-3xs;
+}
+
+article img {
+  @apply rounded-2xl;
+}
