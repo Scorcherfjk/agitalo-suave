@@ -8,7 +8,6 @@ tags: ["gin", "agua tónica", "refrescante", "clásico", "fácil"]
 excerpt: "Un clásico moderno, refrescante y fácil de preparar. Ideal para quienes disfrutan los sabores secos, aromáticos y con un toque de amargor."
 image: "images/03-gin-tonic.avif"
 draft: false
-featured: true
 ---
 
 El Gin Tonic (o Gin and Tonic, según prefieras) es un cóctel directo, elegante y muy refrescante. Su estructura es simple: gin, agua tónica, hielo y un cítrico. Pero aunque parezca fácil, hay pequeños detalles que marcan una gran diferencia.
