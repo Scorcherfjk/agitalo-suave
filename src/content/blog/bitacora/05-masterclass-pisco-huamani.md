@@ -1,8 +1,8 @@
 ---
 title: "Explorando el Pisco: mi experiencia en la Masterclass del Radisson Red"
 slug: "masterclass-pisco-huamani"
-date: 2025-07-03
-updated: 2025-07-06
+date: 2025-07-04
+updated: 2025-07-04
 type: "bitacora"
 tags: ["experiencia", "pisco", "eventos", "aprendizaje", "bitácora"]
 excerpt: "Una experiencia en el Radisson Red Lima me permitió trabajar con pisco Huamaní, preparar tres cócteles de autor con técnicas diferentes, y conocer más del rol del bartender desde la práctica guiada."
