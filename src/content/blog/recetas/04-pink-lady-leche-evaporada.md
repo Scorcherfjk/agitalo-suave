@@ -8,7 +8,6 @@ tags: ["gin", "cóctel clásico", "rosado", "coctelería con leche", "espumoso"]
 excerpt: "Un Pink Lady diferente, con leche evaporada en lugar de clara de huevo. Parte de mi aprendizaje en clases, suave, cremoso y visualmente encantador."
 image: "images/04-pink-lady-leche-evaporada.avif"
 draft: false
-featured: true
 ---
 
 Durante una de mis clases recientes de coctelería, trabajamos con Gin como base, y uno de los tragos que preparamos fue una versión particular del Pink Lady. Me tocó hacerlo a mí directamente en barra, lo cual fue una buena oportunidad para practicar lo aprendido y explorar un cóctel clásico desde un enfoque distinto.

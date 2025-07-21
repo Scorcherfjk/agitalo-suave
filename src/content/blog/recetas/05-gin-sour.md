@@ -8,6 +8,7 @@ tags: ["gin", "sour", "clásico", "limón criollo", "botánico"]
 excerpt: "Un trago clásico con perfil botánico. Equilibrado, aromático y muy vistoso: el Gin Sour se gana su lugar entre los sours favoritos."
 image: "images/05-gin-sour.avif"
 draft: false
+featured: true
 ---
 <!-- https://www.foodandwine.com/gin-sour-cocktail-recipe-11735140 -->
 
