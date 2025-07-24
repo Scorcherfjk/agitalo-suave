@@ -17,8 +17,13 @@ article h2 {
 }
 
 article h3 {
-  @apply text-xl my-5 font-medium;
+  @apply text-xl my-5 font-semibold;
 }
+
+article h4 {
+  @apply text-lg my-5 font-medium;
+}
+
 
 article p {
   @apply my-5 mx-5 text-justify;
