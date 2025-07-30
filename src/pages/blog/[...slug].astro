@@ -17,7 +17,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
-const { title, image, date, excerpt, tags, draft } = post.data;
+const { title, image, date, updated, excerpt, tags, draft } = post.data;
 
 const { Content } = await post.render();
 ---
@@ -34,6 +34,9 @@ const { Content } = await post.render();
       <h1 class="text-3xl">{title}</h1>
       <div>
         <span class="text-xs text-gray-500">{formatDate(date)}</span>
+        { date.getTime() !== updated.getTime() &&
+        (<span class="text-xs text-gray-400"> - Actualizado el {formatDate(updated)}</span>)}
+
       </div>
 
       {
