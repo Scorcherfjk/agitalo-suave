@@ -8,7 +8,7 @@ tags: ["ron", "piña", "cóctel tropical", "crema de coco", "verano"]
 excerpt: "Hay muchas formas de preparar una Piña Colada, y todas tienen algo en común: sabor tropical y ganas de relajarse. En esta entrada te cuento cómo la hice en casa, adaptándome a lo que tenía a la mano."
 image: "images/06-pina-colada.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 Hay cócteles que no necesitan presentación, y la **Piña Colada** es uno de ellos. Desde que comenzamos el curso de coctelería, supe que en algún momento me tocaría prepararla. Y de hecho, la hicimos en clase: una versión tradicional en coctelera y otra directamente licuada, tipo frappé.
