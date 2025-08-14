@@ -1,5 +1,5 @@
 ---
-title: "Piña Colada (con lo que tengas en casa)"
+title: "Piña Colada"
 slug: "pina-colada"
 date: 2025-07-29
 updated: 2025-07-29

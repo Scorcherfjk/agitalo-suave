@@ -1,5 +1,5 @@
 ---
-title: "Gin Sour: un clásico con perfil botánico"
+title: "Gin Sour"
 slug: "gin-sour"
 date: 2025-07-17
 updated: 2025-07-17
