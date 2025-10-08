@@ -8,7 +8,7 @@ tags: ["ron", "maracuyá", "naranja", "bebida venezolana", "granadina", "cóctel
 excerpt: "Refrescante, frutal y con un toque alcohólico equilibrado, la guarapita es un clásico venezolano perfecto para reuniones familiares o días de playa."
 image: "images/07-guarapita.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 La **guarapita** es una bebida muy popular en Venezuela, especialmente en reuniones familiares o escapadas a la playa. Su carácter refrescante, el marcado sabor a fruta y un toque de alcohol bien integrado la hacen ideal para compartir.
