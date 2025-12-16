@@ -6,7 +6,7 @@ updated: 2025-06-16
 type: "bitacora"
 tags: ["gin", "gusto", "paladar", "experiencia", "reflexión"]
 excerpt: "Durante años pensé que me gustaba el gin, pero al volver a probarlo me encontré con otra realidad. Una reflexión personal sobre cómo cambian los gustos y lo que realmente disfrutamos en un cóctel."
-image: "images/02-me-sigue-gustando-el-gin.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759938009/02-me-sigue-gustando-el-gin_q3nmy8.avif"
 draft: false
 ---
 

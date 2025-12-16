@@ -6,7 +6,7 @@ updated: 2025-04-20
 type: "bitacora"
 tags: ["curso", "aprendizaje", "experiencia", "principiante", "domestika"]
 excerpt: "Un resumen de lo que me dejó mi primer acercamiento serio al mundo de la coctelería, desde el shaker hasta el respeto por cada ingrediente."
-image: "images/01-primer-curso-cocteleria.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759938008/01-primer-curso-cocteleria_zzj6pw.avif"
 draft: false
 ---
 
@@ -43,4 +43,4 @@ No todos me salieron perfectos. Algunos los repetí más de una vez. Pero sentí
 
 Este curso fue un punto de partida. No me convirtió en bartender, pero sí me dio herramientas, curiosidad, y una forma distinta de ver cada trago que preparo.
 
-Puedes ver el resultado final en [mi proyecto del curso: *A Journey Through Flavor*](https://www.domestika.org/es/projects/1805349-a-journey-through-flavor).
+Puedes ver el resultado final en [mi proyecto del curso: _A Journey Through Flavor_](https://www.domestika.org/es/projects/1805349-a-journey-through-flavor).

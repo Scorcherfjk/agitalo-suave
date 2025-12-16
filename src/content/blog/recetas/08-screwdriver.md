@@ -6,7 +6,7 @@ updated: 2025-08-20
 type: "receta"
 tags: ["vodka", "naranja", "cóctel clásico", "fácil"]
 excerpt: "Un trago simple, refrescante y con historia, que combina vodka y jugo de naranja para un resultado equilibrado y fácil de disfrutar."
-image: "images/08-screwdriver.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937990/08-screwdriver_hjbws3.avif"
 draft: false
 featured: false
 ---

@@ -6,7 +6,7 @@ updated: 2025-06-23
 type: "bitacora"
 tags: ["libros", "lecturas", "experiencia", "recetas", "mixología"]
 excerpt: "Llegó a mis manos un libro que prometía enseñarme el arte de la mixología, pero me encontré con algo distinto. Esta es mi opinión después de explorarlo con calma y revisar su contenido a fondo."
-image: "images/03-libro-arte-de-la-mixologia.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759938009/03-libro-arte-de-la-mixologia_f8xjsi.avif"
 draft: false
 ---
 

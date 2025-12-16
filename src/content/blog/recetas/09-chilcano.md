@@ -6,7 +6,7 @@ updated: 2025-10-08
 type: "receta"
 tags: ["pisco", "perú", "refrescante", "clásico", "gaseosa", "ginger ale"]
 excerpt: "Un clásico peruano que brilla por su frescura. En esta entrada comparto mi experiencia preparando chilcanos en mi curso de coctelería, y cómo se convirtieron en los favoritos de la noche."
-image: "images/09-chilcano.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937990/09-chilcano_qeecvf.avif"
 draft: false
 featured: true
 ---

@@ -6,7 +6,7 @@ updated: 2025-07-29
 type: "receta"
 tags: ["ron", "piña", "cóctel tropical", "crema de coco", "verano"]
 excerpt: "Hay muchas formas de preparar una Piña Colada, y todas tienen algo en común: sabor tropical y ganas de relajarse. En esta entrada te cuento cómo la hice en casa, adaptándome a lo que tenía a la mano."
-image: "images/06-pina-colada.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/06-pina-colada_bwsh7w.avif"
 draft: false
 featured: false
 ---

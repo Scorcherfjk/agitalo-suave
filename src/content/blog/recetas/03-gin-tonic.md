@@ -6,7 +6,7 @@ updated: 2025-06-14
 type: "receta"
 tags: ["gin", "agua tónica", "refrescante", "clásico", "fácil"]
 excerpt: "Un clásico moderno, refrescante y fácil de preparar. Ideal para quienes disfrutan los sabores secos, aromáticos y con un toque de amargor."
-image: "images/03-gin-tonic.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/03-gin-tonic_bxsdjl.avif"
 draft: false
 ---
 

@@ -6,7 +6,7 @@ updated: 2025-07-08
 type: "receta"
 tags: ["gin", "cóctel clásico", "rosado", "coctelería con leche", "espumoso"]
 excerpt: "Un Pink Lady diferente, con leche evaporada en lugar de clara de huevo. Parte de mi aprendizaje en clases, suave, cremoso y visualmente encantador."
-image: "images/04-pink-lady-leche-evaporada.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/04-pink-lady-leche-evaporada_ynva1j.avif"
 draft: false
 ---
 
@@ -16,16 +16,16 @@ El Pink Lady es un cóctel clásico que ha tenido muchas variantes a lo largo de
 
 ### Ingredientes
 
-- 1.5 oz de gin  
-- 1.5 oz de leche evaporada  
-- 0.75 oz de jarabe de granadina  
+- 1.5 oz de gin
+- 1.5 oz de leche evaporada
+- 0.75 oz de jarabe de granadina
 - Hielo
 
 ### Preparación
 
-1. Añade todos los ingredientes en la coctelera con abundante hielo.  
-2. Agita enérgicamente durante unos 10 a 15 segundos.  
-3. Cuela en una copa coupé sin hielo.  
+1. Añade todos los ingredientes en la coctelera con abundante hielo.
+2. Agita enérgicamente durante unos 10 a 15 segundos.
+3. Cuela en una copa coupé sin hielo.
 4. No lleva decoración. Aunque una pequeña flor comestible no queda nada mal.
 
 ### Resultado y sensaciones

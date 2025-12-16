@@ -2,7 +2,7 @@ import { defineCollection, z, type SchemaContext } from "astro:content";
 
 const blogCollection = defineCollection({
   type: "content",
-  schema: ({ image }: SchemaContext) =>
+  schema: () =>
     z.object({
       title: z.string(),
       date: z.date(),
@@ -10,7 +10,7 @@ const blogCollection = defineCollection({
       type: z.enum(["receta", "bitacora", "tecnica", "tip"]),
       tags: z.array(z.string()),
       excerpt: z.string(),
-      image: image(),
+      imageUrl: z.string(),
       draft: z.boolean().optional().default(false),
       featured: z.boolean().optional().default(false),
     }),

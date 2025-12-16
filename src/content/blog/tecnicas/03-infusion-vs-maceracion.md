@@ -6,7 +6,7 @@ updated: 2025-07-25
 type: "tecnica"
 tags: ["infusión", "maceración", "técnicas", "ingredientes", "licores", "aroma", "color"]
 excerpt: "Infusionar o macerar no es lo mismo, y entender la diferencia puede marcar un antes y un después en tu coctelería casera. En esta publicación exploro qué significa cada técnica, en qué se diferencian, y qué pasos seguir para experimentar en casa."
-image: "images/03-infusion-vs-maceracion.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759938038/03-infusion-vs-maceracion_x1l5ke.avif"
 draft: false
 ---
 

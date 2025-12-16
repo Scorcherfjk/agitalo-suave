@@ -6,7 +6,7 @@ updated: 2025-07-04
 type: "bitacora"
 tags: ["experiencia", "pisco", "eventos", "aprendizaje", "bitácora"]
 excerpt: "Una experiencia en el Radisson Red Lima me permitió trabajar con pisco Huamaní, preparar tres cócteles de autor con técnicas diferentes, y conocer más del rol del bartender desde la práctica guiada."
-image: "images/05-masterclass-pisco-huamani.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759938011/05-masterclass-pisco-huamani_zplggt.avif"
 draft: false
 ---
 
@@ -24,7 +24,7 @@ Un bartender profesional del hotel fue el encargado de guiarnos. Comenzó con un
   </div>
   <div>
 
-![Estación de trabajo en la masterclass](images/05-masterclass-pisco-huamani.avif)
+![Estación de trabajo en la masterclass](https://res.cloudinary.com/ddl7angox/image/upload/v1759938011/05-masterclass-pisco-huamani_zplggt.avif)
 
   </div>
 </div>
@@ -41,7 +41,7 @@ Inspirado en el Negroni, pero con un giro peruano: lleva pisco, vermouth rosso y
 </div>
 <div>
 
-![Sinsoni con su aperitivo](images/05-masterclass-sinsoni.avif)
+![Sinsoni con su aperitivo](https://res.cloudinary.com/ddl7angox/image/upload/v1759938011/05-masterclass-sinsoni_dofhbw.avif)
 
 </div>
 </div>
@@ -56,7 +56,7 @@ Una versión libre del Aperol Spritz, con pisco, zumo de naranja, mistela del ma
 </div>
 <div>
 
-![Mistela Spritz con aperitivo](images/05-masterclass-mistela-spritz.avif)
+![Mistela Spritz con aperitivo](https://res.cloudinary.com/ddl7angox/image/upload/v1759938010/05-masterclass-mistela-spritz_zwpcwx.avif)
 
 </div>
 </div>
@@ -71,7 +71,7 @@ Mi favorito de la noche. Un trago frutal, dulce y tropical, con aires tiki y sab
 </div>
 <div>
 
-![Peruvian Punch servido](images/05-masterclass-peruvian-punch.avif)
+![Peruvian Punch servido](https://res.cloudinary.com/ddl7angox/image/upload/v1759938010/05-masterclass-peruvian-punch_vdhlb4.avif)
 
 </div>
 </div>

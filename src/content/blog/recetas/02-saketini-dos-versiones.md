@@ -7,7 +7,7 @@ type: "receta"
 tags:
   ["comparativo", "sake", "martini", "vodka", "gin", "experimento", "refinado"]
 excerpt: "Un cóctel elegante y directo, preparado en dos versiones: con gin y con vodka. Una comparación personal sobre cómo un mismo trago puede cambiar por completo con un solo ingrediente base."
-image: "images/02-saketini-dos-versiones.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/02-saketini-dos-versiones_er8art.avif"
 draft: false
 featured: false
 ---

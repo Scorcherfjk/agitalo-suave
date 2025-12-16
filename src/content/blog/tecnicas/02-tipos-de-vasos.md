@@ -6,7 +6,7 @@ updated: 2025-06-14
 type: "tecnica"
 tags: ["vasos", "vidrio", "servicio", "presentación", "estructura"]
 excerpt: "No todos los cócteles caben en el mismo vaso —y no es solo por presentación. Conocer los tipos de vasos te ayuda a entender mejor cómo se construye y se sirve cada trago."
-image: "images/02-tipos-de-vasos.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759938038/02-tipos-de-vasos_xjdyhe.avif"
 draft: false
 ---
 
@@ -22,52 +22,45 @@ Algo parecido me pasó con el Aperol Spritz. Lo serví en un vaso bajo —pensan
 
 ### Highball (vaso largo)
 
-- **Capacidad:** 300–400 ml  
-- **Uso típico:** Mojito, Cuba Libre, Gin Tonic  
+- **Capacidad:** 300–400 ml
+- **Uso típico:** Mojito, Cuba Libre, Gin Tonic
 - **Por qué se usa:** Permite añadir bastante hielo y líquidos carbonatados sin desbordarse. Alarga el trago y ayuda a una dilución lenta.
-
 
 ### Copa balón / Copa Spritz
 
-- **Capacidad:** 500–600 ml  
-- **Uso típico:** Aperol Spritz, Gin Tonic europeo  
+- **Capacidad:** 500–600 ml
+- **Uso típico:** Aperol Spritz, Gin Tonic europeo
 - **Por qué se usa:** La boca ancha permite liberar aromas, mientras que el gran volumen da espacio para mucho hielo. Es ideal para tragos con soda y cítricos.
-
 
 ### Copa de Martini
 
-- **Capacidad:** 120–180 ml  
-- **Uso típico:** Martini, Cosmopolitan, Saketini  
+- **Capacidad:** 120–180 ml
+- **Uso típico:** Martini, Cosmopolitan, Saketini
 - **Por qué se usa:** Su forma abierta realza el aroma, pero su tamaño pequeño ayuda a servir tragos fuertes en poca cantidad. Se sostiene por el tallo para no calentar el contenido.
-
 
 ### Old Fashioned / Vaso bajo
 
-- **Capacidad:** 200–300 ml  
-- **Uso típico:** Old Fashioned, Negroni, Whisky solo  
+- **Capacidad:** 200–300 ml
+- **Uso típico:** Old Fashioned, Negroni, Whisky solo
 - **Por qué se usa:** Su boca ancha facilita remover directamente y usar hielos grandes. Es ideal para tragos cortos pero intensos.
-
 
 ### Vaso shot
 
-- **Capacidad:** 30–60 ml  
-- **Uso típico:** Tequila, Vodka, tragos de un solo trago  
+- **Capacidad:** 30–60 ml
+- **Uso típico:** Tequila, Vodka, tragos de un solo trago
 - **Por qué se usa:** Medida estándar para tragos “puros”, sin dilución. También sirve para medir.
-
 
 ### Copa de vino (a veces adaptada)
 
-- **Capacidad:** 400–500 ml  
-- **Uso típico:** Vinos, cócteles con vino espumoso, sangrías, o en ocasiones, adaptaciones de Spritz  
+- **Capacidad:** 400–500 ml
+- **Uso típico:** Vinos, cócteles con vino espumoso, sangrías, o en ocasiones, adaptaciones de Spritz
 - **Por qué se usa:** Su forma permite ver el color y dirigir el aroma. No es común para cócteles clásicos, pero se usa mucho en tragos más modernos.
-
 
 ### Vaso mixing glass (no para servir, pero sí importante)
 
-- **Capacidad:** 500–700 ml  
-- **Uso típico:** Preparar Negronis, Martinis, tragos que se remueven y luego se cuelan  
+- **Capacidad:** 500–700 ml
+- **Uso típico:** Preparar Negronis, Martinis, tragos que se remueven y luego se cuelan
 - **Por qué se usa:** Permite remover ingredientes con hielo de forma controlada antes de servir en otro vaso.
-
 
 ## Algunas observaciones personales
 

@@ -6,7 +6,7 @@ updated: 2025-07-01
 type: "bitacora"
 tags: ["curso", "profesional", "servicio", "barra", "coctelería"]
 excerpt: "Aunque este blog está centrado en la coctelería casera, asistir a mi primer curso presencial me hizo pensar en todo lo que implica el rol de bartender en un bar. Esto fue lo que descubrí."
-image: "images/04-rol-del-bartender.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759938009/04-rol-del-bartender_amg4bu.avif"
 draft: false
 ---
 

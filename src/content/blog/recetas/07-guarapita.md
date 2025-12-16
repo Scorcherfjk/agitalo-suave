@@ -6,7 +6,7 @@ updated: 2025-08-13
 type: "receta"
 tags: ["ron", "maracuyá", "naranja", "bebida venezolana", "granadina", "cóctel tropical"]
 excerpt: "Refrescante, frutal y con un toque alcohólico equilibrado, la guarapita es un clásico venezolano perfecto para reuniones familiares o días de playa."
-image: "images/07-guarapita.avif"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937990/07-guarapita_oevnru.avif"
 draft: false
 featured: false
 ---
