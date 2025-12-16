@@ -8,7 +8,7 @@ tags: ["pisco", "perú", "refrescante", "clásico", "gaseosa", "ginger ale"]
 excerpt: "Un clásico peruano que brilla por su frescura. En esta entrada comparto mi experiencia preparando chilcanos en mi curso de coctelería, y cómo se convirtieron en los favoritos de la noche."
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937990/09-chilcano_qeecvf.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 El **Chilcano** es uno de los cócteles más populares y queridos en el Perú. Refrescante, aromático y fácil de preparar, es una bebida que se disfruta tanto en reuniones familiares como en celebraciones grandes. Aprendí a hacerlo durante mi curso de coctelería, y desde entonces lo considero un cóctel infaltable.
