@@ -12,6 +12,7 @@ const { slug } = Astro.params;
 
 const blogPosts = await getCollection("blog");
 const blogEntries = blogPosts
+  .filter((post) => !post.data.draft)
   .filter((post) => post.slug !== slug?.split("/")[1])
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, max);

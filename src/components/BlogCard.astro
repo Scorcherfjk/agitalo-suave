@@ -11,7 +11,7 @@ export interface Props {
 const {
   post: { data, slug },
 } = Astro.props;
-const { title, image, date, excerpt, type, tags } = data;
+const { title, imageUrl, date, excerpt, type, tags } = data;
 const hasComparative = tags.includes("comparativo");
 ---
 
@@ -23,7 +23,7 @@ const hasComparative = tags.includes("comparativo");
 
     <Image
       alt={title}
-      src={image}
+      src={imageUrl}
       class="h-56 w-full object-cover"
       width={400}
       height={400}

@@ -17,13 +17,20 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
-const { title, image, date, updated, excerpt, tags, draft } = post.data;
+const { title, imageUrl, date, updated, excerpt, tags, draft } = post.data;
 
 const { Content } = await post.render();
 ---
 
-<BlogLayout title={title} description={excerpt} tags={tags} image={image}>
-  <Image alt={title} src={image} class="object-cover w-full h-[350px]" />
+<BlogLayout title={title} description={excerpt} tags={tags} imageUrl={imageUrl}>
+  <Image
+    alt={title}
+    src={imageUrl}
+    class="object-cover w-full h-[350px]"
+    height={350}
+    width={350}
+    quality={"high"}
+  />
   <article class="bg-background">
     <div class="mx-5">
       <a href="/blog">
@@ -34,9 +41,14 @@ const { Content } = await post.render();
       <h1 class="text-3xl">{title}</h1>
       <div>
         <span class="text-xs text-gray-500">{formatDate(date)}</span>
-        { date.getTime() !== updated.getTime() &&
-        (<span class="text-xs text-gray-400"> - Actualizado el {formatDate(updated)}</span>)}
-
+        {
+          date.getTime() !== updated.getTime() && (
+            <span class="text-xs text-gray-400">
+              {" "}
+              - Actualizado el {formatDate(updated)}
+            </span>
+          )
+        }
       </div>
 
       {

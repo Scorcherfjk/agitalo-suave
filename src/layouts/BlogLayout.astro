@@ -7,31 +7,25 @@ import Footer from "../components/layout/Footer.astro";
 import Analytics from "../components/layout/Analytics.astro";
 import BaseHead from "./BaseHead.astro";
 
-interface AstroImageAsset {
-  src: string;
-  width: number;
-  height: number;
-  format: string;
-}
 
 interface Props {
   title: string;
   tags: string[];
-  image: AstroImageAsset;
+  imageUrl: string;
   description: string;
 }
 
-const { title, description, tags, image } = Astro.props;
+const { title, description, tags, imageUrl } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <Analytics />
+    <!-- <Analytics /> -->
     <BaseHead
       title={title}
       description={description}
-      image={image.src}
+      imageUrl={imageUrl}
       tags={tags}
     />
   </head>
