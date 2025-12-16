@@ -8,10 +8,13 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://agitalo-suave.netlify.app",
+  site: "https://agitalosuave.com",
   vite: {
     // @ts-ignore
     plugins: [tailwindcss()],
+  },
+  image: {
+    domains: ["res.cloudinary.com"],
   },
   integrations: [mdx(), sitemap(), icon()],
   adapter: netlify(),
