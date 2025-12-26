@@ -8,7 +8,7 @@ tags: ["whisky", "amaretto", "cocteles clásicos", "fáciles", "suaves"]
 excerpt: "Un clásico simple y elegante que combina whisky escocés y amaretto para lograr un perfil dulce, suave y perfecto para quienes buscan una copa con carácter pero sin intensidad excesiva."
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1765920438/10-godfather_vqfdi2.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 El **Godfather** es uno de esos cócteles que sorprenden por lo sencillo que es y por lo bien que funciona. Lo conocí durante mi curso de coctelería y, para ser honesto, no esperaba que me gustara tanto. Normalmente no soy fan de los tragos muy fuertes o demasiado secos, pero aquí el amaretto cambia por completo la experiencia: suaviza, endulza ligeramente y vuelve el whisky mucho más amable.

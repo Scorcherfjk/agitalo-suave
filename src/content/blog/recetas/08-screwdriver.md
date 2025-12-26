@@ -27,7 +27,7 @@ Sea o no cierta esta anécdota, lo que sí está claro es que el trago se popula
 - Jugo de naranja natural o de caja, al gusto  
 - Hielo en cubos
 
-**Preparación:**
+### Preparación:
 
 1. Llena un vaso alto con hielo.
 2. Añade entre 1.5 y 2 oz de vodka, según tu preferencia de intensidad.

@@ -37,7 +37,7 @@ En esta proporción, el ron queda bastante diluido, lo que da como resultado una
 - **0.75 oz** de granadina  
 - **1 oz** de ron blanco  
 
-**Preparación:**
+### Preparación:
 
 1. En una coctelera con hielo, vierte todos los ingredientes.
 2. Agita enérgicamente hasta que la mezcla esté bien fría.

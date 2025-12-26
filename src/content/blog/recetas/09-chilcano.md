@@ -15,16 +15,26 @@ El **Chilcano** es uno de los cócteles más populares y queridos en el Perú. R
 
 ### La receta base
 
-- 1.5 oz de pisco Italia  
-- 0.5 oz de zumo de limón fresco  
-- 0.5 oz de jarabe de goma (opcional, según gusto)  
-- 1 golpe de amargo de angostura  
-- Ginger ale para completar  
-- Rodaja de limón para decorar  
+- 1.5 oz de pisco Italia
+- 0.5 oz de zumo de limón fresco
+- 0.5 oz de jarabe de goma (opcional, según gusto)
+- 1 golpe de amargo de angostura
+- Ginger ale para completar
+
+**Decoración**
+
+- Rodaja de limón para decorar
 - Vaso: tipo **long drink**
 
-**Preparación:**  
-En un vaso largo con hielo, añade el pisco, el zumo de limón y el jarabe de goma (si decides usarlo). Da un breve mezclado, agrega un golpe de amargo de angostura y completa con **ginger ale** bien fría. Decora con una rodaja de limón.
+### Preparación
+
+1. Llena un vaso largo con hielo.
+2. Añade el pisco.
+3. Incorpora el zumo de limón y el jarabe de goma (si decides usarlo).
+4. Mezcla suavemente para integrar los ingredientes.
+5. Agrega un golpe de amargo de angostura.
+6. Completa el vaso con **ginger ale** bien fría.
+7. Decora con una rodaja de limón.
 
 ### Preparación en mayor cantidad
 
@@ -41,6 +51,6 @@ Como no era un ambiente profesional sino una práctica entre compañeros, me sen
 
 ### Resultado final
 
-Al final, todos coincidieron en que el chilcano estaba muy bueno, y me pidieron que preparara más. Fue una sensación muy grata, no solo por el resultado, sino por haber compartido un cóctel tan representativo del Perú con otras personas.  
+Al final, todos coincidieron en que el chilcano estaba muy bueno, y me pidieron que preparara más. Fue una sensación muy grata, no solo por el resultado, sino por haber compartido un cóctel tan representativo del Perú con otras personas.
 
-Este trago, aunque sencillo, demuestra que la mezcla justa de **acidez, dulzor y burbujas** puede convertirse en una experiencia memorable. Y en mi caso, se convirtió también en una de las primeras veces en las que pude **poner a prueba mi aprendizaje en coctelería con público real**.  
+Este trago, aunque sencillo, demuestra que la mezcla justa de **acidez, dulzor y burbujas** puede convertirse en una experiencia memorable. Y en mi caso, se convirtió también en una de las primeras veces en las que pude **poner a prueba mi aprendizaje en coctelería con público real**.
