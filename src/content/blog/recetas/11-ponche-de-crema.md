@@ -6,9 +6,9 @@ updated: 2025-12-24
 type: "receta"
 tags: ["bebidas venezolanas", "cremosos", "ron", "postre", "tradicional"]
 excerpt: "Una bebida cremosa y dulce muy presente en las fiestas venezolanas. El ponche de crema es fácil de preparar en casa y combina ron, flan y leche condensada en una receta que sabe a tradición."
-imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1766764290/ponche-de-crema_pz5db4.png"
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1769036323/ponche-de-crema_pigeb3.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 El **ponche de crema** es una de esas bebidas que forman parte del imaginario familiar venezolano. No es solo un trago: es algo que se comparte, que se sirve en casa y que aparece casi automáticamente cuando hay fiestas y reuniones. Es cremoso, dulce y con un toque alcohólico que se siente suave al inicio, pero que conviene no subestimar.
