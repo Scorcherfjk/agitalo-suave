@@ -8,7 +8,7 @@ tags: ["pisco", "algarrobina", "cóctel peruano", "postre", "clásicos"]
 excerpt: "El cóctel de algarrobina es uno de esos tragos que se sienten más como un postre que como una bebida. Cremoso, dulce y reconfortante, es una excelente puerta de entrada al mundo del pisco."
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1769036414/coctel-de-algarrobina_omhm0k.avif"
 draft: false
-featured: true
+featured: false
 ---
 
 Hay cócteles que uno no se toma con apuro. El **cóctel de algarrobina** es uno de ellos. Es espeso, cremoso, dulce y reconfortante. Más que un trago para empezar la noche, es un cierre perfecto, casi como pedir un postre… pero en vaso.
