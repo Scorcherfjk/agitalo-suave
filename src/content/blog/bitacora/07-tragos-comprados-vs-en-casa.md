@@ -1,13 +1,12 @@
 ---
 title: "Tragos comprados vs. tragos preparados en casa"
-slug: "tragos-comprados-vs-en-casa"
 date: 2026-04-01
 updated: 2026-04-01
 type: "bitacora"
 tags: ["bitácora", "coctelería", "experiencia personal", "aprendizaje", "criterio"]
 excerpt: "Una reflexión personal sobre cuándo disfruto más un trago comprado y cuándo prefiero hacerlo en casa. No desde la teoría, sino desde la experiencia, el error y el aprendizaje."
-image: "images/tragos-casa-vs-bar.avif"
-draft: false8,kmjn hD3RX
+imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1777746416/home-drink_i6hrzn.avif"
+draft: false
 ---
 
 Desde que empecé a aprender coctelería con un poco más de intención, algo cambió en la forma en la que me relaciono con los tragos. No solo cuando los preparo en casa, sino también cuando los pido fuera. Empecé a probar con otros ojos, con más atención, y sobre todo con más criterio.
