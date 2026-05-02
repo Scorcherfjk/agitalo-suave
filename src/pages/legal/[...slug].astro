@@ -3,7 +3,7 @@ import "../../styles/global.css";
 import "../../styles/blog.css";
 
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import { formatDate } from "../../utils";
 import Alert from "../../components/Alert.astro";
@@ -11,7 +11,7 @@ import Alert from "../../components/Alert.astro";
 export const getStaticPaths = (async () => {
   const legalPage = await getCollection("legal");
   return legalPage.map((page) => ({
-    params: { slug: page.slug },
+    params: { slug: page.id },
     props: { page },
   }));
 }) satisfies GetStaticPaths;
@@ -19,7 +19,7 @@ export const getStaticPaths = (async () => {
 const { page } = Astro.props;
 const { title, description, date, draft } = page.data;
 
-const { Content } = await page.render();
+const { Content } = await render(page);
 ---
 
 <MainLayout title={title} description={description}>

@@ -9,16 +9,16 @@ export interface Props {
 }
 
 const {
-  post: { data, slug },
+  post: { data, id },
 } = Astro.props;
-const { title, imageUrl, date, excerpt, type, tags } = data;
+const { title, imageUrl, date, excerpt, tags } = data;
 const hasComparative = tags.includes("comparativo");
 ---
 
 <section
   class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg bg-background relative"
 >
-  <a href={`/blog/${type}/${slug}`} aria-label={title}>
+  <a href={`/blog/${id}`} aria-label={title}>
     {hasComparative && <Badge label="Comparativo" />}
 
     <Image
