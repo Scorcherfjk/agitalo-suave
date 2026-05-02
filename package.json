@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "update": "pnpm dlx @astrojs/upgrade"
+    "update": "pnpm dlx @astrojs/upgrade",
+    "test": "pnpm vitest run"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -19,5 +20,8 @@
     "astro-icon": "^1.1.5",
     "sharp": "^0.34.2",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.5"
   }
 }
