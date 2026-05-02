@@ -1,12 +1,17 @@
-import { defineCollection, z, type SchemaContext } from "astro:content";
+import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const blogCollection = defineCollection({
-  type: "content",
+  loader: glob({ 
+    pattern: "**/*.{md,mdx}", 
+    base: "./src/content/blog",
+    generateId: ({ entry }) => entry.replace(/\.mdx?$/, ''),
+  }),
   schema: () =>
     z.object({
       title: z.string(),
-      date: z.date(),
-      updated: z.date(),
+      date: z.coerce.date(),
+      updated: z.coerce.date(),
       type: z.enum(["receta", "bitacora", "tecnica", "tip"]),
       tags: z.array(z.string()),
       excerpt: z.string(),
@@ -17,12 +22,12 @@ const blogCollection = defineCollection({
 });
 
 const legalCollection = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/legal" }),
   schema: () =>
     z.object({
       title: z.string(),
       description: z.string(),
-      date: z.date(),
+      date: z.coerce.date(),
       draft: z.boolean().optional().default(false),
     }),
 });
