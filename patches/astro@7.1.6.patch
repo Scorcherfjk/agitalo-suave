@@ -1,0 +1,41 @@
+diff --git a/dist/assets/internal.js b/dist/assets/internal.js
+index 311bcea65cff273fd2ca3db4f294638223c9eac2..a1974cf967d070da065b2045f25534f8e14b6876 100644
+--- a/dist/assets/internal.js
++++ b/dist/assets/internal.js
+@@ -18,9 +18,10 @@ import { inferRemoteSize } from "./utils/remoteProbe.js";
+ import { createPlaceholderURL, stringifyPlaceholderURL } from "./utils/url.js";
+ import { verifyOptions } from "./services/service.js";
+ const cssFitValues = ["fill", "contain", "cover", "scale-down"];
++let _imageServiceImportPromise;
+ async function getConfiguredImageService() {
+   if (!globalThis?.astroAsset?.imageService) {
+-    const { default: service } = await import(
++    _imageServiceImportPromise ??= import(
+       // @ts-expect-error
+       "virtual:image-service"
+     ).catch((e) => {
+@@ -28,6 +29,24 @@ async function getConfiguredImageService() {
+       error.cause = e;
+       throw error;
+     });
++    try {
++      const mod = await _imageServiceImportPromise;
++      if (mod?.default) {
++        if (!globalThis.astroAsset) globalThis.astroAsset = {};
++        globalThis.astroAsset.imageService = mod.default;
++        return mod.default;
++      }
++    } finally {
++      _imageServiceImportPromise = void 0;
++    }
++    await new Promise((resolve) => setTimeout(resolve, 0));
++    const { default: service } = await import(
++      // @ts-expect-error
++      "virtual:image-service"
++    );
++    if (!service) {
++      throw new AstroError(AstroErrorData.InvalidImageService);
++    }
+     if (!globalThis.astroAsset) globalThis.astroAsset = {};
+     globalThis.astroAsset.imageService = service;
+     return service;

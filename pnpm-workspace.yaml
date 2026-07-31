@@ -1,0 +1,2 @@
+patchedDependencies:
+  astro@7.1.6: patches/astro@7.1.6.patch
