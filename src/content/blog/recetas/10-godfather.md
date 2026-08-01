@@ -9,6 +9,16 @@ excerpt: "Un clásico simple y elegante que combina whisky escocés y amaretto p
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1765920438/10-godfather_vqfdi2.avif"
 draft: false
 featured: false
+ingredients:
+  - 2 oz de whisky escocés
+  - 1 oz de amaretto
+  - Hielo en cubos
+steps:
+  - Llena un vaso corto (old fashioned) con cubos de hielo.
+  - Agrega 2 oz de whisky escocés.
+  - Añade 1 oz de amaretto.
+  - Remueve suavemente para mezclar y enfriar.
+  - Sirve y disfruta.
 ---
 
 El **Godfather** es uno de esos cócteles que sorprenden por lo sencillo que es y por lo bien que funciona. Lo conocí durante mi curso de coctelería y, para ser honesto, no esperaba que me gustara tanto. Normalmente no soy fan de los tragos muy fuertes o demasiado secos, pero aquí el amaretto cambia por completo la experiencia: suaviza, endulza ligeramente y vuelve el whisky mucho más amable.
@@ -19,15 +29,15 @@ En mi caso lo preparé con **Johnnie Walker Blonde** y **Disaronno**, una combin
 
 ## Ingredientes
 
-- 2 partes de whisky escocés  
-- 1 parte de amaretto  
+- 2 oz de whisky escocés  
+- 1 oz de amaretto  
 - Hielo en cubos  
 
 ## Preparación
 
 1. Llena un vaso corto (old fashioned) con cubos de hielo.  
-2. Agrega **2 partes de whisky escocés**.  
-3. Añade **1 parte de amaretto**.  
+2. Agrega **2 oz de whisky escocés**.  
+3. Añade **1 oz de amaretto**.  
 4. Remueve suavemente para mezclar y enfriar.  
 5. Sirve y disfruta.
 

@@ -9,6 +9,19 @@ excerpt: "Una bebida cremosa y dulce muy presente en las fiestas venezolanas. El
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1769036323/ponche-de-crema_pigeb3.avif"
 draft: false
 featured: false
+ingredients:
+  - 1 litro de flan ya preparado (según las instrucciones del fabricante)
+  - 1 lata de leche condensada
+  - 1 taza de ron (puede ser ron blanco o ron oscuro)
+  - Un chorrito de esencia de vainilla (opcional)
+steps:
+  - Prepara el flan siguiendo las instrucciones del fabricante y deja que cuaje completamente.
+  - Una vez listo y frío, coloca el flan en la licuadora.
+  - Añade la leche condensada.
+  - Usa la misma lata de la leche condensada para medir y agregar el ron.
+  - Incorpora, si deseas, un chorrito de vainilla para reforzar el aroma.
+  - Licúa durante unos segundos, solo hasta que todos los ingredientes se integren bien.
+  - Embotella la mezcla y guarda en refrigeración antes de servir.
 ---
 
 El **ponche de crema** es una de esas bebidas que forman parte del imaginario familiar venezolano. No es solo un trago: es algo que se comparte, que se sirve en casa y que aparece casi automáticamente cuando hay fiestas y reuniones. Es cremoso, dulce y con un toque alcohólico que se siente suave al inicio, pero que conviene no subestimar.
@@ -24,7 +37,7 @@ Esta es la versión que más me gusta preparar, porque es fácil, consistente y 
 - 1 taza de ron *(puede ser ron blanco o ron oscuro)*
 - Un chorrito de esencia de vainilla (opcional)
 
-*Como referencia, muchas recetas coinciden en una proporción aproximada de **300 ml de ron por cada litro de flan**, lo cual encaja bastante bien con la medida de la lata.*
+*Como referencia, muchas recetas coinciden en una proporción aproximada de **10 oz de ron por cada litro de flan**, lo cual encaja bastante bien con la medida de la lata.*
 
 ## Preparación
 

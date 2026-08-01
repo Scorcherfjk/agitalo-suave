@@ -9,6 +9,17 @@ excerpt: "Hay muchas formas de preparar una Piña Colada, y todas tienen algo en
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/06-pina-colada_bwsh7w.avif"
 draft: false
 featured: false
+ingredients:
+  - 1.5 oz de ron blanco
+  - 2 oz de crema de coco
+  - 4 oz de jugo de piña (de caja o natural)
+  - Hielo
+  - Rodaja de piña y cereza para decorar
+steps:
+  - Vierte todos los ingredientes en la coctelera con hielo.
+  - Bate enérgicamente hasta que la mezcla esté bien integrada y fría.
+  - Sirve colando en una copa huracán con más hielo.
+  - Decora con una rodaja de piña y una cereza.
 ---
 
 Hay cócteles que no necesitan presentación, y la **Piña Colada** es uno de ellos. Desde que comenzamos el curso de coctelería, supe que en algún momento me tocaría prepararla. Y de hecho, la hicimos en clase: una versión tradicional en coctelera y otra directamente licuada, tipo frappé.

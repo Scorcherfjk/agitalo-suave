@@ -8,13 +8,24 @@ tags: ["gin", "agua tónica", "refrescante", "clásico", "fácil"]
 excerpt: "Un clásico moderno, refrescante y fácil de preparar. Ideal para quienes disfrutan los sabores secos, aromáticos y con un toque de amargor."
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/03-gin-tonic_bxsdjl.avif"
 draft: false
+ingredients:
+  - 2 oz de gin
+  - Agua tónica bien fría, la necesaria para completar el vaso
+  - 1 rodaja de limón (puede sustituirse por lima o incluso pepino según el perfil del gin)
+  - Hielo en abundancia
+steps:
+  - Llena un vaso grande, tipo balón o largo, con bastante hielo.
+  - Sirve el gin sobre el hielo.
+  - Añade la rodaja de limón.
+  - Completa con agua tónica bien fría, vertiéndola suavemente para conservar el gas.
+  - No remuevas demasiado; un movimiento suave es suficiente. Sirve de inmediato.
 ---
 
 El Gin Tonic (o Gin and Tonic, según prefieras) es un cóctel directo, elegante y muy refrescante. Su estructura es simple: gin, agua tónica, hielo y un cítrico. Pero aunque parezca fácil, hay pequeños detalles que marcan una gran diferencia.
 
 ### Ingredientes
 
-- 60 ml (2 oz) de gin
+- 2 oz de gin
 - Agua tónica bien fría (la suficiente para completar el vaso)
 - 1 rodaja de limón (puede sustituirse por lima o incluso pepino, según el perfil del gin)
 - Hielo en abundancia

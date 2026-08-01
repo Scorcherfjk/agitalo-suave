@@ -9,6 +9,18 @@ excerpt: "El Alexander es un cóctel clásico, cremoso y elegante, que combina e
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1769037518/alexander_p3cdcg.avif"
 draft: false
 featured: false
+ingredients:
+  - 1 oz de gin
+  - 1 oz de crema de cacao
+  - 1 oz de leche evaporada
+  - Hielo
+  - Nuez moscada rallada (o canela en polvo) para decorar
+steps:
+  - Vierte el gin, la crema de cacao y la leche evaporada en la coctelera.
+  - Añade hielo en buena cantidad.
+  - Bate enérgicamente hasta que el trago esté bien frío y con textura homogénea.
+  - Sirve colando en una copa o vaso de tu elección.
+  - Espolvorea ligeramente nuez moscada por encima (o canela, si no tienes nuez moscada).
 ---
 
 El **Alexander** es uno de esos cócteles clásicos que demuestran que no hacen falta muchos ingredientes para lograr algo memorable. Es cremoso, suave y recuerda a un chocolate frío, con el perfil herbal del gin marcando el carácter del trago.

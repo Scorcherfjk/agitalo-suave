@@ -9,6 +9,15 @@ excerpt: "Un trago simple, refrescante y con historia, que combina vodka y jugo 
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937990/08-screwdriver_hjbws3.avif"
 draft: false
 featured: false
+ingredients:
+  - 1.5 a 2 oz de vodka
+  - Jugo de naranja natural o de caja, al gusto
+  - Hielo en cubos
+steps:
+  - Llena un vaso alto con hielo en cubos.
+  - Añade entre 1.5 y 2 oz de vodka, según tu preferencia de intensidad.
+  - Rellena el vaso con jugo de naranja.
+  - Remueve suavemente para integrar los ingredientes y sirve de inmediato.
 ---
 
 El **Screwdriver** (o *destornillador*) es uno de esos cócteles que, por su sencillez y frescura, siempre terminan siendo un favorito. Para mí, tiene un valor especial: fue con este trago con el que comencé a tomar vodka. Siempre me pareció relajado, como un jugo de naranja con un toque alcohólico, y me gustaba disfrutarlo sin complicaciones.

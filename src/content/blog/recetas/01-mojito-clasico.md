@@ -11,6 +11,21 @@ excerpt:
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/01-mojito-clasico_extqxk.avif"
 draft: false
 featured: false
+ingredients:
+  - 2 oz de ron blanco
+  - 8 a 10 hojas de hierbabuena o menta fresca
+  - 2 cucharaditas de azúcar blanca
+  - 1 oz de jugo de lima recién exprimido
+  - Agua con gas o soda al gusto
+  - Hielo picado o en cubos
+  - Rodaja de lima y ramita de menta para decorar
+steps:
+  - En un vaso largo, mezcla el azúcar con el jugo de lima y revuelve hasta disolverla bien.
+  - Añade las hojas de hierbabuena y machácalas suavemente con un muddler o una cuchara, solo para liberar el aroma sin destrozarlas.
+  - Agrega el ron y remueve para integrar.
+  - Llena el vaso con hielo hasta el tope.
+  - Rellena con agua con gas o soda y mezcla suavemente.
+  - Decora con una rodaja de lima y una ramita de menta.
 ---
 
 El mojito fue uno de los primeros cócteles que me atreví a preparar en casa. Es simple, sí, pero cuando se hace bien, transmite frescura, equilibrio y un ritmo veraniego que funciona en cualquier momento del año.
@@ -19,17 +34,17 @@ Esta es la receta que repito cuando quiero algo sabroso, clásico y con ingredie
 
 ### Ingredientes
 
-- 50 ml de ron blanco
+- 2 oz de ron blanco
 - 8–10 hojas de hierbabuena o menta fresca
 - 2 cucharaditas de azúcar blanca
-- 25 ml de zumo de lima recién exprimido
+- 1 oz de jugo de lima recién exprimido
 - Agua con gas o soda al gusto
 - Hielo (picado o en cubos)
 - Rodaja de lima y ramita de menta para decorar
 
 ### Preparación
 
-1. En un vaso largo, mezcla el azúcar con el zumo de lima.
+1. En un vaso largo, mezcla el azúcar con el jugo de lima.
 2. Añade las hojas de menta y machácalas suavemente con un muddler o cuchara. La idea es liberar el aroma, no destrozarlas.
 3. Agrega el ron y revuelve bien.
 4. Llena el vaso con hielo hasta el tope.

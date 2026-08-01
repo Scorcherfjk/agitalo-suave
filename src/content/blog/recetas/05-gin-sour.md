@@ -9,6 +9,18 @@ excerpt: "Un trago clásico con perfil botánico. Equilibrado, aromático y muy 
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/05-gin-sour_xqfyhg.avif"
 draft: false
 featured: false
+ingredients:
+  - 2 oz de gin
+  - 0.75 oz de jugo de limón criollo recién exprimido (si usas limón amarillo o Tahití, ajusta a 1 oz)
+  - 1 oz de sirope simple (proporción 1:1)
+  - 1 clara de huevo (opcional, para textura y espuma)
+  - Hielo
+steps:
+  - Coloca en la coctelera el gin, el jugo de limón, el sirope y la clara de huevo (si decides usarla).
+  - Agita en seco, sin hielo, durante unos 10 segundos para integrar bien la clara.
+  - Añade hielo a la coctelera y vuelve a agitar con energía durante 15 segundos.
+  - Cuela la mezcla en una copa coupé, copa martini o vaso bajo, sin hielo.
+  - "Opcional: decora con unas gotas de amargo de Angostura o una rodaja de cítrico deshidratado."
 ---
 <!-- https://www.foodandwine.com/gin-sour-cocktail-recipe-11735140 -->
 
@@ -19,14 +31,14 @@ La mezcla del gin con el dulzor del sirope y la acidez del limón me llamó la a
 ### Ingredientes
 
 - 2 oz de gin  
-- 0.75 oz de zumo de limón criollo (recién exprimido) *Si usas limón amarillo o Tahití, puedes ajustar a 1 oz*  
+- 0.75 oz de jugo de limón criollo (recién exprimido) *Si usas limón amarillo o Tahití, puedes ajustar a 1 oz*  
 - 1 oz de sirope simple (Proporción 1:1)  
 - 1 clara de huevo (opcional, para textura y espuma)  
 - Hielo  
 
 ### Preparación
 
-1. Coloca en la coctelera el gin, el zumo de limón, el sirope y la clara de huevo (si decides usarla).
+1. Coloca en la coctelera el gin, el jugo de limón, el sirope y la clara de huevo (si decides usarla).
 2. Agita en seco (sin hielo) durante unos 10 segundos para integrar bien la clara.
 3. Añade hielo a la coctelera y vuelve a agitar con energía durante 15 segundos.
 4. Cuela la mezcla en una copa coupé, copa martini o vaso bajo, sin hielo.
@@ -34,7 +46,7 @@ La mezcla del gin con el dulzor del sirope y la acidez del limón me llamó la a
 
 ### Nota sobre el limón
 
-El tipo de limón puede cambiar por completo el resultado. Si quieres saber más sobre cómo ajustarlo en tus recetas, puedes leer la entrada [“Cuidado con los limones”](/blog/tecnica/cuidado-con-los-limones).
+El tipo de limón puede cambiar por completo el resultado. Si quieres saber más sobre cómo ajustarlo en tus recetas, puedes leer la entrada [“Cuidado con los limones”](/blog/tecnicas/cuidado-con-los-limones).
 
 ### Notas personales
 

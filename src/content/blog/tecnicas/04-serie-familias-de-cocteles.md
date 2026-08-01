@@ -35,11 +35,11 @@ Una de las familias más elegantes de la coctelería clásica. Partiendo de una 
 Probablemente la familia más grande de todas. Una estructura muy sencilla basada en destilado, un ingrediente ácido y un elemento dulce da origen a una enorme cantidad de cócteles clásicos.
 
 - <input type="checkbox" disabled> Sour
-- <input type="checkbox" checked disabled> [Gin Sour](/blog/recetas/05-gin-sour/)
+- <input type="checkbox" checked disabled> [Gin Sour](/blog/recetas/gin-sour/)
 - <input type="checkbox" disabled> Whisky Sour
 - <input type="checkbox" disabled> Pisco Sour
 - <input type="checkbox" disabled> Daiquiri
-- <input type="checkbox" checked disabled> [Pink Lady](/blog/recetas/04-pink-lady-leche-evaporada/)
+- <input type="checkbox" checked disabled> [Pink Lady](/blog/recetas/pink-lady-leche-evaporada/)
 - <input type="checkbox" disabled> Bee's Knees
 
 
@@ -71,14 +71,14 @@ Muy pocos ingredientes, pero una enorme cantidad de variaciones.
 - <input type="checkbox" disabled> Vodka Martini
 - <input type="checkbox" disabled> Dirty Martini
 - <input type="checkbox" disabled> Gibson
-- <input type="checkbox" checked disabled> [Saquetini](/blog/recetas/02-saquetini-dos-versiones/)
+- <input type="checkbox" checked disabled> [Saquetini](/blog/recetas/saketini-dos-versiones/)
 
 
 ### Familia del Godfather
 
 Una familia de cócteles donde un destilado se combina con un licor para crear perfiles muy distintos con una preparación extremadamente sencilla.
 
-- <input type="checkbox" checked disabled> [Godfather](/blog/recetas/10-godfather/)
+- <input type="checkbox" checked disabled> [Godfather](/blog/recetas/godfather/)
 - <input type="checkbox" disabled> Godmother
 - <input type="checkbox" disabled> French Connection
 - <input type="checkbox" disabled> Rusty Nail
@@ -88,9 +88,9 @@ Una familia de cócteles donde un destilado se combina con un licor para crear p
 
 Cócteles largos donde el protagonista es un destilado acompañado por un mezclador, generalmente servido en un vaso alto con abundante hielo.
 
-- <input type="checkbox" checked disabled> [Gin Tonic](/blog/recetas/03-gin-tonic/)
-- <input type="checkbox" checked disabled> [Chilcano](/blog/recetas/09-chilcano/)
-- <input type="checkbox" checked disabled> [Screwdriver](/blog/recetas/08-screwdriver/)
+- <input type="checkbox" checked disabled> [Gin Tonic](/blog/recetas/gin-tonic/)
+- <input type="checkbox" checked disabled> [Chilcano](/blog/recetas/chilcano/)
+- <input type="checkbox" checked disabled> [Screwdriver](/blog/recetas/screwdriver/)
 - <input type="checkbox" disabled> Cuba Libre
 - <input type="checkbox" disabled> Horse's Neck
 - <input type="checkbox" disabled> Scotch & Soda
@@ -100,7 +100,7 @@ Cócteles largos donde el protagonista es un destilado acompañado por un mezcla
 
 Cócteles refrescantes donde la menta o la hierbabuena tienen un papel protagonista.
 
-- <input type="checkbox" checked disabled> [Mojito](/blog/recetas/01-mojito-clasico/)
+- <input type="checkbox" checked disabled> [Mojito](/blog/recetas/mojito-clasico/)
 - <input type="checkbox" disabled> Southside
 - <input type="checkbox" disabled> Mint Julep
 
@@ -109,7 +109,7 @@ Cócteles refrescantes donde la menta o la hierbabuena tienen un papel protagoni
 
 Cócteles tropicales caracterizados por su textura cremosa y sabores frutales.
 
-- <input type="checkbox" checked disabled> [Piña Colada](/blog/recetas/06-pina-colada/)
+- <input type="checkbox" checked disabled> [Piña Colada](/blog/recetas/pina-colada/)
 - <input type="checkbox" disabled> Chi Chi
 - <input type="checkbox" disabled> Painkiller
 
@@ -118,10 +118,10 @@ Cócteles tropicales caracterizados por su textura cremosa y sabores frutales.
 
 Cócteles clásicos de textura cremosa con cacao y un destilado como protagonistas.
 
-- <input type="checkbox" checked disabled> [Alexander](/blog/recetas/13-alexander/)
+- <input type="checkbox" checked disabled> [Alexander](/blog/recetas/alexander/)
 - <input type="checkbox" disabled> Brandy Alexander
 - <input type="checkbox" disabled> Coffee Alexander
-- <input type="checkbox" checked disabled> [Cóctel de Algarrobina](/blog/recetas/12-coctel-de-algarrobina/) *(aunque no pertenece oficialmente a esta familia, comparte una preparación y un perfil muy similares.)*
+- <input type="checkbox" checked disabled> [Cóctel de Algarrobina](/blog/recetas/coctel-de-algarrobina/) *(aunque no pertenece oficialmente a esta familia, comparte una preparación y un perfil muy similares.)*
 
 ## ¿Por qué hacer esta serie?
 

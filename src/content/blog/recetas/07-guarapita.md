@@ -9,6 +9,17 @@ excerpt: "Refrescante, frutal y con un toque alcohólico equilibrado, la guarapi
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937990/07-guarapita_oevnru.avif"
 draft: false
 featured: false
+ingredients:
+  - 2 oz de jugo de maracuyá
+  - 1 oz de jugo de naranja
+  - 0.75 oz de granadina
+  - 1 oz de ron blanco
+  - Hielo
+steps:
+  - En una coctelera con hielo, vierte todos los ingredientes.
+  - Agita enérgicamente hasta que la mezcla esté bien fría.
+  - Sirve en un vaso alto o corto, según prefieras, con abundante hielo.
+  - Disfruta en buena compañía.
 ---
 
 La **guarapita** es una bebida muy popular en Venezuela, especialmente en reuniones familiares o escapadas a la playa. Su carácter refrescante, el marcado sabor a fruta y un toque de alcohol bien integrado la hacen ideal para compartir.

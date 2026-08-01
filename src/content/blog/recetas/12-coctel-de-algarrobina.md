@@ -9,6 +9,21 @@ excerpt: "El cóctel de algarrobina es uno de esos tragos que se sienten más co
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1769036414/coctel-de-algarrobina_omhm0k.avif"
 draft: false
 featured: false
+ingredients:
+  - "2 oz de pisco no aromático (uvas recomendadas: Quebranta, Negra Criolla, Mollar o Uvina)"
+  - 2 oz de leche evaporada
+  - 0.5 oz de algarrobina
+  - 0.5 oz de crema de cacao
+  - 0.5 oz de jarabe de goma
+  - 1 yema de huevo
+  - Hielo
+  - Canela en polvo para decorar
+steps:
+  - Coloca en la coctelera el pisco, la leche evaporada, la algarrobina, la crema de cacao, el jarabe de goma y la yema de huevo.
+  - Añade hielo en buena cantidad.
+  - Bate enérgicamente hasta que la mezcla esté bien integrada, fría y con textura cremosa.
+  - Sirve colando en el vaso de tu elección.
+  - Espolvorea ligeramente canela en polvo por encima.
 ---
 
 Hay cócteles que uno no se toma con apuro. El **cóctel de algarrobina** es uno de ellos. Es espeso, cremoso, dulce y reconfortante. Más que un trago para empezar la noche, es un cierre perfecto, casi como pedir un postre… pero en vaso.

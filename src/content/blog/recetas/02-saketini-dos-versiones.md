@@ -10,6 +10,16 @@ excerpt: "Un cóctel elegante y directo, preparado en dos versiones: con gin y c
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937989/02-saketini-dos-versiones_er8art.avif"
 draft: false
 featured: false
+ingredients:
+  - 2 oz de vodka o gin
+  - 1 oz de sake
+  - 1 dash de bitter de naranja
+  - Cáscara de naranja para decorar (opcional)
+steps:
+  - Mezcla el vodka o gin con el sake y el bitter de naranja en un vaso mezclador con hielo.
+  - Remueve suavemente para integrar los ingredientes y enfriar el cóctel.
+  - Cuela y sirve en una copa previamente enfriada.
+  - "Opcional: decora con una cáscara de naranja para reforzar el aroma, o sírvelo sin garnish."
 ---
 
 El Saketini es un cóctel minimalista y directo. Mezcla sake con un destilado base, generalmente gin o vodka, y algún bitter aromático. Es un trago elegante, frío, con mucha presencia alcohólica y un sabor que no es para todo el mundo. Lo probé recientemente con una botella de sake que compré, y quise explorar cómo cambiaba el perfil del trago dependiendo del espíritu que usara.
@@ -18,8 +28,8 @@ Preparé dos versiones con la misma receta base y quedé sorprendido con lo dist
 
 ### Receta base
 
-- 60 ml (2 oz) de vodka o gin
-- 30 ml (1 oz) de sake
+- 2 oz de vodka o gin
+- 1 oz de sake
 - 1 dash de bitter de naranja
 
 **Preparación**: Mezclar en vaso mezclador con hielo, remover suavemente, colar y servir en una copa previamente enfriada. Puedes decorarlo con una cáscara de naranja si quieres reforzar el aroma, pero yo lo tomé sin garnish.

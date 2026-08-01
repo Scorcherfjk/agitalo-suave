@@ -9,6 +9,21 @@ excerpt: "Un clásico peruano que brilla por su frescura. En esta entrada compar
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1759937990/09-chilcano_qeecvf.avif"
 draft: false
 featured: false
+ingredients:
+  - 1.5 oz de pisco Italia
+  - 0.5 oz de jugo de limón fresco
+  - 0.5 oz de jarabe de goma (opcional, según tu gusto)
+  - 1 golpe de amargo de Angostura
+  - Ginger ale bien fría para completar
+  - Rodaja de limón para decorar
+steps:
+  - Llena un vaso largo con hielo.
+  - Añade el pisco.
+  - Incorpora el jugo de limón y, si decides usarlo, el jarabe de goma.
+  - Mezcla suavemente para integrar los ingredientes.
+  - Agrega el golpe de amargo de Angostura.
+  - Completa el vaso con ginger ale bien fría.
+  - Decora con una rodaja de limón.
 ---
 
 El **Chilcano** es uno de los cócteles más populares y queridos en el Perú. Refrescante, aromático y fácil de preparar, es una bebida que se disfruta tanto en reuniones familiares como en celebraciones grandes. Aprendí a hacerlo durante mi curso de coctelería, y desde entonces lo considero un cóctel infaltable.
@@ -16,7 +31,7 @@ El **Chilcano** es uno de los cócteles más populares y queridos en el Perú. R
 ### La receta base
 
 - 1.5 oz de pisco Italia
-- 0.5 oz de zumo de limón fresco
+- 0.5 oz de jugo de limón fresco
 - 0.5 oz de jarabe de goma (opcional, según gusto)
 - 1 golpe de amargo de angostura
 - Ginger ale para completar
@@ -30,7 +45,7 @@ El **Chilcano** es uno de los cócteles más populares y queridos en el Perú. R
 
 1. Llena un vaso largo con hielo.
 2. Añade el pisco.
-3. Incorpora el zumo de limón y el jarabe de goma (si decides usarlo).
+3. Incorpora el jugo de limón y el jarabe de goma (si decides usarlo).
 4. Mezcla suavemente para integrar los ingredientes.
 5. Agrega un golpe de amargo de angostura.
 6. Completa el vaso con **ginger ale** bien fría.

@@ -6,10 +6,21 @@ updated: 2026-01-29
 type: "receta"
 tags:
   ["licor beirão", "maracuyá", "cócteles portugueses", "refrescante", "herbal"]
-excerpt: "El maracujão es un cóctel portugués refrescante y fácil de preparar, elaborado con Licor Beirão, zumo de limón y maracuyá. Una excelente opción para un trago rápido, frutal y con carácter herbal."
+excerpt: "El maracujão es un cóctel portugués refrescante y fácil de preparar, elaborado con Licor Beirão, jugo de limón y maracuyá. Una excelente opción para un trago rápido, frutal y con carácter herbal."
 imageUrl: "https://res.cloudinary.com/ddl7angox/image/upload/v1769716685/maracujao_nyo6ih.avif"
 draft: false
 featured: true
+ingredients:
+  - 2 oz de Licor Beirão
+  - 1 oz de jugo de limón (limón amarillo, tipo Eureka o Lisbon)
+  - 3.5 oz de jugo de maracuyá
+  - Hielo picado (cantidad necesaria)
+steps:
+  - Añade el jugo de maracuyá y el jugo de limón en un vaso.
+  - Rellena el vaso con hielo picado.
+  - Vierte el Licor Beirão.
+  - Agita enérgicamente para integrar bien los ingredientes.
+  - Coloca dos pajillas y sirve.
 ---
 
 Durante mi viaje a Portugal me traje un par de botellitas de **Licor Beirão** con una idea clara en mente: hacer una pequeña cata en casa y, por fin, preparar el **maracujão**, un cóctel muy popular en Portugal que me había quedado pendiente durante el viaje.
@@ -21,13 +32,13 @@ La receta oficial se encuentra en la web de Licor Beirão, pero la dejo aquí ad
 ### Ingredientes
 
 - 2 oz de **Licor Beirão**
-- 1 oz de **zumo de limón**
-- 3.5 oz de **zumo de maracuyá**
+- 1 oz de **jugo de limón**
+- 3.5 oz de **jugo de maracuyá**
 - Hielo picado (cantidad necesaria)
 
 ### Preparación
 
-1. Añade el zumo de maracuyá y el zumo de limón en un vaso.
+1. Añade el jugo de maracuyá y el jugo de limón en un vaso.
 2. Rellena el vaso con hielo picado.
 3. Vierte el Licor Beirão.
 4. Agita enérgicamente para integrar bien los ingredientes.
@@ -35,11 +46,11 @@ La receta oficial se encuentra en la web de Licor Beirão, pero la dejo aquí ad
 
 ### Un apunte importante sobre el limón
 
-Al tratarse de una receta de origen europeo, cuando se menciona **zumo de limón**, se hace referencia al **limón amarillo** (tipo Eureka o Lisbon), no al limón criollo o sutil que es más común en Latinoamérica.
+Al tratarse de una receta de origen europeo, cuando se menciona **jugo de limón**, se hace referencia al **limón amarillo** (tipo Eureka o Lisbon), no al limón criollo o sutil que es más común en Latinoamérica.
 
 Este detalle es importante porque el limón amarillo tiene una acidez más moderada y un perfil más estable. Si se utiliza limón criollo en la misma proporción, el cóctel puede quedar mucho más ácido de lo esperado y romper el equilibrio del trago.
 
-Si solo tienes limón criollo, lo recomendable es **reducir ligeramente la cantidad** y ajustar al gusto, probando antes de servir. Si quieres profundizar más en este tema, lo explico con detalle en esta entrada del blog: [Cuidado con los limones](/blog/tecnica/cuidado-con-los-limones)
+Si solo tienes limón criollo, lo recomendable es **reducir ligeramente la cantidad** y ajustar al gusto, probando antes de servir. Si quieres profundizar más en este tema, lo explico con detalle en esta entrada del blog: [Cuidado con los limones](/blog/tecnicas/cuidado-con-los-limones)
 
 ### Sobre el Licor Beirão y por qué funciona tan bien aquí
 
