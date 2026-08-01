@@ -157,6 +157,20 @@ const { Content } = await render(post);
     </div>
   </section>
 
+  <div class="print-only">
+    <p class="print-only-eyebrow">{typeLabel[type]}</p>
+    <h1>{title}</h1>
+    <p class="print-only-meta">
+      <time>{formatDate(date)}</time>
+      <span> · {readingTime} min de lectura</span>
+      {
+        date.getTime() !== updated.getTime() && (
+          <span> · Actualizado el {formatDate(updated)}</span>
+        )
+      }
+    </p>
+  </div>
+
   <article class="bg-background">
     <div class="mx-5">
       {
