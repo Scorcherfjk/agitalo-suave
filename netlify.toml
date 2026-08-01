@@ -1,3 +1,217 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+# Redirects 301: URLs antiguas (con prefijo numérico) -> slugs limpios
+# Bitácora
+[[redirects]]
+  from = "/blog/bitacora/01-primer-curso-cocteleria"
+  to = "/blog/bitacora/primer-curso-cocteleria"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/01-primer-curso-cocteleria/"
+  to = "/blog/bitacora/primer-curso-cocteleria/"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/02-me-sigue-gustando-el-gin"
+  to = "/blog/bitacora/me-sigue-gustando-el-gin"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/02-me-sigue-gustando-el-gin/"
+  to = "/blog/bitacora/me-sigue-gustando-el-gin/"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/03-libro-arte-de-la-mixologia"
+  to = "/blog/bitacora/libro-arte-de-la-mixologia"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/03-libro-arte-de-la-mixologia/"
+  to = "/blog/bitacora/libro-arte-de-la-mixologia/"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/04-rol-del-bartender"
+  to = "/blog/bitacora/rol-del-bartender"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/04-rol-del-bartender/"
+  to = "/blog/bitacora/rol-del-bartender/"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/05-masterclass-pisco-huamani"
+  to = "/blog/bitacora/masterclass-pisco-huamani"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/05-masterclass-pisco-huamani/"
+  to = "/blog/bitacora/masterclass-pisco-huamani/"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/06-bitacora-portugal-bebidas-tipicas"
+  to = "/blog/bitacora/bitacora-portugal-bebidas-tipicas"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/06-bitacora-portugal-bebidas-tipicas/"
+  to = "/blog/bitacora/bitacora-portugal-bebidas-tipicas/"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/07-tragos-comprados-vs-en-casa"
+  to = "/blog/bitacora/tragos-comprados-vs-en-casa"
+  status = 301
+[[redirects]]
+  from = "/blog/bitacora/07-tragos-comprados-vs-en-casa/"
+  to = "/blog/bitacora/tragos-comprados-vs-en-casa/"
+  status = 301
+# Recetas
+[[redirects]]
+  from = "/blog/recetas/01-mojito-clasico"
+  to = "/blog/recetas/mojito-clasico"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/01-mojito-clasico/"
+  to = "/blog/recetas/mojito-clasico/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/02-saketini-dos-versiones"
+  to = "/blog/recetas/saketini-dos-versiones"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/02-saketini-dos-versiones/"
+  to = "/blog/recetas/saketini-dos-versiones/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/03-gin-tonic"
+  to = "/blog/recetas/gin-tonic"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/03-gin-tonic/"
+  to = "/blog/recetas/gin-tonic/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/04-pink-lady-leche-evaporada"
+  to = "/blog/recetas/pink-lady-leche-evaporada"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/04-pink-lady-leche-evaporada/"
+  to = "/blog/recetas/pink-lady-leche-evaporada/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/05-gin-sour"
+  to = "/blog/recetas/gin-sour"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/05-gin-sour/"
+  to = "/blog/recetas/gin-sour/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/06-pina-colada"
+  to = "/blog/recetas/pina-colada"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/06-pina-colada/"
+  to = "/blog/recetas/pina-colada/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/07-guarapita"
+  to = "/blog/recetas/guarapita"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/07-guarapita/"
+  to = "/blog/recetas/guarapita/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/08-screwdriver"
+  to = "/blog/recetas/screwdriver"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/08-screwdriver/"
+  to = "/blog/recetas/screwdriver/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/09-chilcano"
+  to = "/blog/recetas/chilcano"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/09-chilcano/"
+  to = "/blog/recetas/chilcano/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/10-godfather"
+  to = "/blog/recetas/godfather"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/10-godfather/"
+  to = "/blog/recetas/godfather/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/11-ponche-de-crema"
+  to = "/blog/recetas/ponche-de-crema"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/11-ponche-de-crema/"
+  to = "/blog/recetas/ponche-de-crema/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/12-coctel-de-algarrobina"
+  to = "/blog/recetas/coctel-de-algarrobina"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/12-coctel-de-algarrobina/"
+  to = "/blog/recetas/coctel-de-algarrobina/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/13-alexander"
+  to = "/blog/recetas/alexander"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/13-alexander/"
+  to = "/blog/recetas/alexander/"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/14-maracujao"
+  to = "/blog/recetas/maracujao"
+  status = 301
+[[redirects]]
+  from = "/blog/recetas/14-maracujao/"
+  to = "/blog/recetas/maracujao/"
+  status = 301
+# Técnica
+[[redirects]]
+  from = "/blog/tecnicas/01-cuidado-con-los-limones"
+  to = "/blog/tecnicas/cuidado-con-los-limones"
+  status = 301
+[[redirects]]
+  from = "/blog/tecnicas/01-cuidado-con-los-limones/"
+  to = "/blog/tecnicas/cuidado-con-los-limones/"
+  status = 301
+[[redirects]]
+  from = "/blog/tecnicas/02-tipos-de-vasos"
+  to = "/blog/tecnicas/tipos-de-vasos"
+  status = 301
+[[redirects]]
+  from = "/blog/tecnicas/02-tipos-de-vasos/"
+  to = "/blog/tecnicas/tipos-de-vasos/"
+  status = 301
+[[redirects]]
+  from = "/blog/tecnicas/03-infusion-vs-maceracion"
+  to = "/blog/tecnicas/infusion-vs-maceracion"
+  status = 301
+[[redirects]]
+  from = "/blog/tecnicas/03-infusion-vs-maceracion/"
+  to = "/blog/tecnicas/infusion-vs-maceracion/"
+  status = 301
+[[redirects]]
+  from = "/blog/tecnicas/04-serie-familias-de-cocteles"
+  to = "/blog/tecnicas/serie-familias-de-cocteles"
+  status = 301
+[[redirects]]
+  from = "/blog/tecnicas/04-serie-familias-de-cocteles/"
+  to = "/blog/tecnicas/serie-familias-de-cocteles/"
+  status = 301
+# Tips
+[[redirects]]
+  from = "/blog/tips/01-sirope-simple-casero"
+  to = "/blog/tips/sirope-simple-casero"
+  status = 301
+[[redirects]]
+  from = "/blog/tips/01-sirope-simple-casero/"
+  to = "/blog/tips/sirope-simple-casero/"
+  status = 301
