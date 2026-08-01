@@ -1,0 +1,41 @@
+---
+import type { Page } from "astro";
+import type { ImageMetadata } from "astro";
+import BlogCard from "./BlogCard.astro";
+import PageHeader from "./PageHeader.astro";
+import Pagination from "./Pagination.astro";
+
+interface Props {
+  page: Page;
+  eyebrow: string;
+  title: string;
+  description: string;
+  heading: string;
+  image?: ImageMetadata;
+}
+
+const { page, eyebrow, title, description, heading, image } = Astro.props;
+---
+
+<PageHeader
+  eyebrow={eyebrow}
+  title={title}
+  description={description}
+  image={image}
+/>
+
+<section class="bg-background-alt">
+  <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <div class="max-w-xl">
+      <h2 class="text-2xl font-bold tracking-tight text-complementary sm:text-3xl">
+        {heading}
+      </h2>
+    </div>
+    <div
+      class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
+    >
+      {page.data.map((post) => <BlogCard post={post} />)}
+    </div>
+    <Pagination page={page} />
+  </div>
+</section>

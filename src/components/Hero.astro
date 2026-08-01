@@ -5,6 +5,8 @@ interface Props {
   hasButtons?: boolean;
   primaryButtonText?: string;
   secondaryButtonText?: string;
+  primaryButtonHref?: string;
+  secondaryButtonHref?: string;
 }
 
 const {
@@ -13,6 +15,8 @@ const {
   hasButtons = true,
   primaryButtonText,
   secondaryButtonText,
+  primaryButtonHref = "/recetas",
+  secondaryButtonHref = "/contacto",
 } = Astro.props;
 ---
 
@@ -40,8 +44,8 @@ const {
           <div class="mt-8 flex flex-wrap gap-4 text-center">
             {primaryButtonText && (
               <a
-                href="/academy"
-                class="block w-full rounded-sm bg-primary px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-blue-900 focus:ring-3 focus:outline-hidden sm:w-auto"
+                href={primaryButtonHref}
+                class="block w-full rounded-sm bg-primary px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-accent focus:ring-3 focus:outline-hidden sm:w-auto"
               >
                 {primaryButtonText}
               </a>
@@ -49,8 +53,8 @@ const {
 
             {secondaryButtonText && (
               <a
-                href="/contact"
-                class="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-primary shadow-sm hover:text-blue-900 focus:ring-3 focus:outline-hidden sm:w-auto"
+                href={secondaryButtonHref}
+                class="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-primary shadow-sm hover:text-accent focus:ring-3 focus:outline-hidden sm:w-auto"
               >
                 {secondaryButtonText}
               </a>
