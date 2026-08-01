@@ -1,11 +1,10 @@
 ---
 import type { GetStaticPaths } from "astro";
-import BlogCard from "../../components/BlogCard.astro";
-import Hero from "../../components/Hero.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
-import Pagination from "../../components/Pagination.astro";
+import PostListing from "../../components/PostListing.astro";
 import { PAGE_SIZE } from "../../consts";
 import { getPostsByType } from "../../utils";
+import cta2 from "../../assets/cta-index-2.avif";
 
 export const getStaticPaths = (async ({ paginate }) => {
   const filteredPosts = await getPostsByType("tip");
@@ -15,26 +14,13 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 ---
 
-<MainLayout title="Blog">
-  <Hero
-    title="Agítalo Suave"
-    description="Explorando la coctelería casera, un trago a la vez."
+<MainLayout title="Tips">
+  <PostListing
+    page={page}
+    eyebrow="Tips"
+    title="Tips"
+    description="Consejos prácticos para mejorar tus tragos en casa, sin equipos caros ni complicaciones."
+    heading="Los tips más recientes"
+    image={cta2}
   />
-  <section class="bg-background-alt">
-    <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <div class="max-w-6xl">
-        <h2
-          class="text-4xl font-bold tracking-tight text-complementary sm:text-5xl"
-        >
-          Los tips más recientes
-        </h2>
-      </div>
-      <div
-        class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
-      >
-        {page.data.map((post) => <BlogCard post={post} />)}
-      </div>
-      <Pagination page={page} />
-    </div>
-  </section>
 </MainLayout>

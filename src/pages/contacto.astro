@@ -1,14 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Hero from "../components/Hero.astro";
+import PageHeader from "../components/PageHeader.astro";
 import ContactForm from "../components/ContactForm.astro";
 import BlogEntries from "../components/BlogEntries.astro";
 ---
 
 <MainLayout title="Contacto">
-  <Hero
-    title="Agítalo Suave"
-    description="Explorando el mundo de los cócteles, a mi ritmo"
+  <PageHeader
+    eyebrow="Contacto"
+    title="Hablemos"
+    description="¿Tienes una duda, sugerencia o solo quieres saludar? Escríbeme y te responderé tan pronto como pueda."
   />
   <ContactForm />
   <BlogEntries />

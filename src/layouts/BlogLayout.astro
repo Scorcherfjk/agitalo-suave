@@ -13,9 +13,10 @@ interface Props {
   tags: string[];
   imageUrl: string;
   description: string;
+  jsonLd?: string;
 }
 
-const { title, description, tags, imageUrl } = Astro.props;
+const { title, description, tags, imageUrl, jsonLd } = Astro.props;
 ---
 
 <!doctype html>
@@ -28,6 +29,7 @@ const { title, description, tags, imageUrl } = Astro.props;
       imageUrl={imageUrl}
       tags={tags}
     />
+    {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
   </head>
   <body>
     <Navbar />
