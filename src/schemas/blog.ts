@@ -8,6 +8,9 @@ export const blogSchema = z.object({
   tags: z.array(z.string()),
   excerpt: z.string(),
   imageUrl: z.string(),
+  headerImage: z.string().optional(),
+  ingredients: z.array(z.string()).optional(),
+  steps: z.array(z.string()).optional(),
   draft: z.boolean().optional().default(false),
   featured: z.boolean().optional().default(false),
 });

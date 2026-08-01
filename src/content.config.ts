@@ -3,10 +3,14 @@ import { glob } from "astro/loaders";
 import { blogSchema, legalSchema } from "./schemas";
 
 const blogCollection = defineCollection({
-  loader: glob({ 
-    pattern: "**/*.{md,mdx}", 
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
     base: "./src/content/blog",
-    generateId: ({ entry }) => entry.replace(/\.mdx?$/, ''),
+    generateId: ({ entry, data }) => {
+      const [category, ...rest] = entry.replace(/\.mdx?$/, "").split("/");
+      const fallback = rest.join("/").replace(/^\d+-/, "");
+      return `${category}/${data?.slug ?? fallback}`;
+    },
   }),
   schema: blogSchema,
 });

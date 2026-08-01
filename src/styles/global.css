@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('/fonts/DancingScript.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @theme {
   --color-black: #2F2E41;
   --color-background: #faf4f0;
@@ -7,19 +15,10 @@
   --color-background-alt: #fde2e4;
   --color-accent: #be185d;
   --color-complementary: #6a0572;
+  --color-footer: #8c3f95;
 
   --font-cursive: 'Dancing Script', cursive;
 }
-
-.font-cursiva {
-  font-family: var(--font-cursiva);
-}
-
-.color1 {color: #5ba2df;}
-.color2 {color: #f499e5;}
-.color3 {color: #f8c1b1;}
-.color4 {color: #f6eda9;}
-.color5 {color: #f1efe8;}
 
 .cols-sm-3 {@apply sm:grid-cols-3;}
 .cols-sm-4 {@apply sm:grid-cols-4;}
@@ -28,4 +27,30 @@
 html {
   scroll-behavior: smooth;
   background: #faf4f0;
+}
+
+@media print {
+  header,
+  footer,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+  }
+
+  article {
+    padding: 0 !important;
+  }
+
+  article > * {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  article p {
+    text-align: left !important;
+  }
 }

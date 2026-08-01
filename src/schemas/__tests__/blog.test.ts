@@ -55,4 +55,20 @@ describe("blogSchema", () => {
     });
     expect(Array.isArray(result.tags)).toBe(true);
   });
+
+  it("acepta ingredients y steps en recetas", () => {
+    const result = blogSchema.parse({
+      title: "Test",
+      date: "2026-01-01",
+      updated: "2026-01-01",
+      type: "receta",
+      tags: ["test"],
+      excerpt: "Test",
+      imageUrl: "/test.jpg",
+      ingredients: ["1 oz de ron"],
+      steps: ["Mezcla todos los ingredientes"],
+    });
+    expect(result.ingredients).toEqual(["1 oz de ron"]);
+    expect(result.steps).toEqual(["Mezcla todos los ingredientes"]);
+  });
 });
