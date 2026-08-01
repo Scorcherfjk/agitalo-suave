@@ -14,7 +14,7 @@ import { Icon } from "astro-icon/components";
           abierto 24/7, pero siempre estoy atento a nuevos brindis y buenas
           conversaciones.
         </p>
-        <p class="mt-6 text-sm text-gray-600">También puedes encontrarme en las redes:</p>
+        <p class="mt-6 text-sm text-gray-600 dark:text-gray-300">También puedes encontrarme en las redes:</p>
         <ul class="mt-3 flex gap-6">
           {
             [
@@ -39,7 +39,7 @@ import { Icon } from "astro-icon/components";
       </div>
 
       <div
-        class="rounded-lg bg-white/50 p-8 shadow-lg lg:col-span-3 lg:p-12 flex items-center"
+        class="rounded-lg bg-white/50 p-8 shadow-lg lg:col-span-3 lg:p-12 flex items-center dark:bg-gray-800/60"
       >
         <form
           class="space-y-4 w-full"
@@ -58,11 +58,11 @@ import { Icon } from "astro-icon/components";
           </p>
 
           <div>
-            <label for="name" class="block text-sm font-medium text-gray-700">
+            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
               Nombre completo
             </label>
             <input
-              class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+              class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary dark:border-gray-600 dark:bg-gray-800/60 dark:text-primary dark:placeholder:text-gray-500"
               placeholder="Tu nombre"
               type="text"
               id="name"
@@ -73,11 +73,11 @@ import { Icon } from "astro-icon/components";
 
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <label for="email" class="block text-sm font-medium text-gray-700">
+              <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Email
               </label>
               <input
-                class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+                class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary dark:border-gray-600 dark:bg-gray-800/60 dark:text-primary dark:placeholder:text-gray-500"
                 placeholder="tucorreo@ejemplo.com"
                 type="email"
                 id="email"
@@ -87,11 +87,11 @@ import { Icon } from "astro-icon/components";
             </div>
 
             <div>
-              <label for="phone" class="block text-sm font-medium text-gray-700">
-                Teléfono <span class="font-normal text-gray-500">(opcional)</span>
+              <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                Teléfono <span class="font-normal text-gray-500 dark:text-gray-400">(opcional)</span>
               </label>
               <input
-                class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+                class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary dark:border-gray-600 dark:bg-gray-800/60 dark:text-primary dark:placeholder:text-gray-500"
                 placeholder="+51 999 999 999"
                 type="tel"
                 id="phone"
@@ -101,11 +101,11 @@ import { Icon } from "astro-icon/components";
           </div>
 
           <div>
-            <label for="message" class="block text-sm font-medium text-gray-700">
+            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">
               Tu mensaje
             </label>
             <textarea
-              class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+              class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary dark:border-gray-600 dark:bg-gray-800/60 dark:text-primary dark:placeholder:text-gray-500"
               placeholder="Cuéntame tu duda, sugerencia o saludo..."
               id="message"
               name="message"
@@ -117,7 +117,7 @@ import { Icon } from "astro-icon/components";
           <div class="pt-2">
             <button
               type="submit"
-              class="inline-block w-full rounded-sm bg-complementary px-5 py-3 font-medium text-white transition hover:bg-accent sm:w-auto"
+              class="inline-block w-full rounded-sm bg-complementary px-5 py-3 font-medium text-white transition hover:bg-accent dark:text-black sm:w-auto"
             >
               Enviar
             </button>

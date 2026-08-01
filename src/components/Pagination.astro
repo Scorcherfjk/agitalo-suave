@@ -29,7 +29,7 @@ const mobilePages =
     : allPages;
 
 const navLinkClass =
-  "inline-flex items-center gap-2 rounded-sm border border-accent px-4 py-2 text-sm font-medium text-accent transition hover:bg-accent hover:text-white";
+  "inline-flex items-center gap-2 rounded-sm border border-accent px-4 py-2 text-sm font-medium text-accent transition hover:bg-accent hover:text-white dark:hover:text-black";
 const navLinkDisabledClass = `${navLinkClass} pointer-events-none opacity-40`;
 const pageLinkClass =
   "flex size-9 items-center justify-center rounded-sm border text-sm transition";
@@ -63,7 +63,7 @@ const pageLinkClass =
                   <a
                     href={pageHref(n)}
                     aria-current="page"
-                    class={`${pageLinkClass} border-accent bg-accent text-white`}
+                    class={`${pageLinkClass} border-accent bg-accent text-white dark:text-black`}
                   >
                     {n}
                   </a>
@@ -88,7 +88,7 @@ const pageLinkClass =
                   <a
                     href={pageHref(n)}
                     aria-current="page"
-                    class={`${pageLinkClass} border-accent bg-accent text-white`}
+                    class={`${pageLinkClass} border-accent bg-accent text-white dark:text-black`}
                   >
                     {n}
                   </a>

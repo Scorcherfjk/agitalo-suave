@@ -5,7 +5,7 @@ import image from "../assets/404.avif";
 ---
 
 <MainLayout title="Página no encontrada">
-  <div class="flex flex-col bg-white">
+  <div class="flex flex-col bg-white dark:bg-background">
     <Image
       src={image}
       alt="cocktail"
@@ -15,17 +15,17 @@ import image from "../assets/404.avif";
     />
     <div class="flex flex-1 items-center justify-center h-32">
       <div class="mx-auto max-w-xl px-4 py-8 text-center">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-primary">
           No podemos encontrar la página que buscas.
         </h1>
 
-        <p class="mt-4 text-gray-500">
+        <p class="mt-4 text-gray-500 dark:text-gray-400">
           Intenta revisar la dirección o regresar a la página de inicio.
         </p>
 
         <a
           href="/"
-          class="mt-6 inline-block rounded-sm bg-complementary px-5 py-3 text-sm font-medium text-white hover:bg-complementary/90 focus:ring-3 focus:outline-hidden"
+          class="mt-6 inline-block rounded-sm bg-complementary px-5 py-3 text-sm font-medium text-white hover:bg-complementary/90 dark:text-black focus:ring-3 focus:outline-hidden"
         >
           Volver a la página de inicio
         </a>

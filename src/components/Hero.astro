@@ -56,14 +56,14 @@ const buttons = getHeroButtons(
               button.variant === "primary" ? (
                 <a
                   href={button.href}
-                  class="block w-full rounded-sm bg-primary px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-accent focus:ring-3 focus:outline-hidden sm:w-auto"
+                  class="block w-full rounded-sm bg-primary px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-accent dark:bg-accent dark:text-black dark:hover:bg-accent/80 focus:ring-3 focus:outline-hidden sm:w-auto"
                 >
                   {button.text}
                 </a>
               ) : (
                 <a
                   href={button.href}
-                  class="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-primary shadow-sm hover:text-accent focus:ring-3 focus:outline-hidden sm:w-auto"
+                  class="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-primary shadow-sm hover:text-accent dark:text-black dark:hover:text-accent focus:ring-3 focus:outline-hidden sm:w-auto"
                 >
                   {button.text}
                 </a>

@@ -42,7 +42,7 @@ article ol {
 }
 
 article blockquote {
-  @apply py-0.5 ml-3 text-gray-600 border-l-2 border-gray-600;
+  @apply py-0.5 ml-3 text-gray-600 border-l-2 border-gray-600 dark:text-gray-300 dark:border-gray-400;
 }
 
 article .right-image-section {

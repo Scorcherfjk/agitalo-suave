@@ -29,8 +29,8 @@ const shareLinks = [
 ];
 ---
 
-<div class="mt-8 border-t border-gray-200 pt-6 no-print">
-  <p class="text-sm font-medium text-gray-600">¿Te gustó la receta? Compártela:</p>
+<div class="mt-8 border-t border-gray-200 pt-6 no-print dark:border-gray-700">
+  <p class="text-sm font-medium text-gray-600 dark:text-gray-300">¿Te gustó la receta? Compártela:</p>
   <div class="mt-3 flex flex-wrap gap-2">
     {
       shareLinks.map((link) => (
@@ -61,7 +61,7 @@ const shareLinks = [
     <button
       id="copy-link-button"
       type="button"
-      class="inline-flex items-center gap-2 rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-complementary hover:text-white"
+      class="inline-flex items-center gap-2 rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-complementary hover:text-white dark:bg-gray-700 dark:text-gray-200 dark:hover:text-black"
     >
       <svg
         viewBox="0 0 24 24"

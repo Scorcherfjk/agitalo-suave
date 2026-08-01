@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: 'Dancing Script';
   src: url('/fonts/DancingScript.ttf') format('truetype');
@@ -20,6 +22,17 @@
   --font-cursive: 'Dancing Script', cursive;
 }
 
+.dark {
+  color-scheme: dark;
+
+  --color-background: #17131d;
+  --color-primary: #f5eef2;
+  --color-background-alt: #241d2e;
+  --color-accent: #f472b6;
+  --color-complementary: #d8b4fe;
+  --color-footer: #8c3f95;
+}
+
 .cols-sm-3 {@apply sm:grid-cols-3;}
 .cols-sm-4 {@apply sm:grid-cols-4;}
 .cols-sm-5 {@apply sm:grid-cols-5;}
@@ -29,11 +42,47 @@ html {
   background: #faf4f0;
 }
 
+html.dark {
+  background: #17131d;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-primary;
+  }
+}
+
 .print-only {
   display: none;
 }
 
 @media print {
+  .dark {
+    color-scheme: light;
+    --color-background: #faf4f0;
+    --color-primary: #1f2937;
+    --color-background-alt: #fde2e4;
+    --color-accent: #be185d;
+    --color-complementary: #6a0572;
+  }
+
+  .dark\:text-gray-100 { color: #111827; }
+  .dark\:text-gray-200 { color: #1f2937; }
+  .dark\:text-gray-300 { color: #4b5563; }
+  .dark\:text-gray-400 { color: #6b7280; }
+  .dark\:border-gray-600 { border-color: #e5e7eb; }
+  .dark\:border-gray-700 { border-color: #e5e7eb; }
+  .dark\:bg-gray-700 { background-color: #e5e7eb; }
+  .dark\:bg-gray-800 { background-color: transparent; }
+  .dark\:bg-gray-800\/60 { background-color: transparent; }
+  .dark\:before\:bg-gray-600:before { background-color: #e5e7eb; }
+  .dark\:placeholder\:text-gray-500::placeholder { color: #9ca3af; }
+
+  blockquote {
+    color: #4b5563;
+    border-color: #4b5563;
+  }
+
   header,
   footer,
   nav,
