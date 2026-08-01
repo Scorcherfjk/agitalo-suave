@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import NewsletterForm from "../NewsletterForm.astro";
 
 const RRSS = [
   {
@@ -145,8 +146,15 @@ const year = new Date().getFullYear();
       </div>
     </div>
 
-    <p class="text-xs text-white">
-      &copy; {year}. Made with ❤️ by an enthusiastic bartender
-    </p>
+    <div
+      class="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"
+    >
+      <p class="max-w-md text-xs text-white">
+        &copy; {year}. Made with ❤️ by an enthusiastic bartender
+      </p>
+      <div class="lg:max-w-md">
+        <NewsletterForm compact />
+      </div>
+    </div>
   </div>
 </footer>

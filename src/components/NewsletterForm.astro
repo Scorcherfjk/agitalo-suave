@@ -1,0 +1,149 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  compact?: boolean;
+}
+
+const {
+  title = "Un correo, una receta",
+  description = "Tips de coctelería y recetas nuevas directo a tu bandeja. Sin spam, solo buenos tragos.",
+  compact = false,
+} = Astro.props;
+
+const uid = Astro.uid;
+const emailId = `newsletter-email-${uid}`;
+---
+
+{
+  compact ? (
+    <form
+      name="newsletter"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      data-compact
+      class="newsletter-form mt-4"
+    >
+      <input type="hidden" name="form-name" value="newsletter" />
+      <p class="hidden" aria-hidden="true">
+        <label>
+          No rellenar este campo:
+          <input name="bot-field" tabindex="-1" autocomplete="off" />
+        </label>
+      </p>
+      <label for={emailId} class="text-sm font-medium text-white">
+        ¿Te gustan los tragos? Recibe una receta al mes
+      </label>
+      <div class="mt-2 flex flex-col gap-2 sm:flex-row">
+        <input
+          id={emailId}
+          name="email"
+          type="email"
+          required
+          placeholder="tu@correo.com"
+          class="w-full rounded-sm border border-white/30 bg-white/10 px-3 py-2 text-sm text-white outline-complementary placeholder:text-white/60 sm:w-64"
+        />
+        <button
+          type="submit"
+          data-newsletter-submit
+          class="shrink-0 rounded-sm bg-white px-4 py-2 text-sm font-medium text-footer transition hover:bg-rose-200"
+        >
+          Suscribirme
+        </button>
+      </div>
+      <p
+        data-newsletter-feedback
+        class="mt-2 hidden text-sm text-white"
+        role="status"
+      ></p>
+    </form>
+  ) : (
+    <section class="bg-background-alt">
+      <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="text-3xl font-bold text-complementary sm:text-4xl">
+            {title}
+          </h2>
+          <p class="mt-4 text-lg text-primary">{description}</p>
+          <form
+            name="newsletter"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            class="newsletter-form mx-auto mt-8 max-w-md"
+          >
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="hidden" aria-hidden="true">
+              <label>
+                No rellenar este campo:
+                <input name="bot-field" tabindex="-1" autocomplete="off" />
+              </label>
+            </p>
+            <div class="flex flex-col gap-2 sm:flex-row">
+              <label for={emailId} class="sr-only">Tu email</label>
+              <input
+                id={emailId}
+                name="email"
+                type="email"
+                required
+                placeholder="tu@correo.com"
+                class="w-full rounded-sm border border-gray-300 bg-white px-3 py-2 text-sm text-primary outline-complementary placeholder:text-gray-400"
+              />
+              <button
+                type="submit"
+                data-newsletter-submit
+                class="shrink-0 rounded-sm bg-complementary px-4 py-2 text-sm font-medium text-white transition hover:bg-accent"
+              >
+                Suscribirme
+              </button>
+            </div>
+            <p
+              data-newsletter-feedback
+              class="mt-2 hidden text-sm font-medium"
+              role="status"
+            ></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<script>
+  const forms = document.querySelectorAll(".newsletter-form");
+  forms.forEach((form) => {
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const feedback = form.querySelector("[data-newsletter-feedback]");
+      const submitButton = form.querySelector("[data-newsletter-submit]");
+      if (!feedback || !submitButton) return;
+
+      const isCompact = form.hasAttribute("data-compact");
+      submitButton.disabled = true;
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            Accept: "application/json",
+          },
+          body: new URLSearchParams(new FormData(form)).toString(),
+        });
+        if (!response.ok) throw new Error("Netlify error");
+        feedback.textContent =
+          "¡Listo! Revisa tu correo para confirmar la suscripción.";
+        feedback.classList.remove("hidden", "text-red-600", "text-rose-200");
+        feedback.classList.add(isCompact ? "text-white" : "text-emerald-600");
+        form.reset();
+      } catch {
+        feedback.textContent =
+          "Hubo un problema al enviar. Inténtalo de nuevo.";
+        feedback.classList.remove("hidden", "text-emerald-600", "text-white");
+        feedback.classList.add(isCompact ? "text-rose-200" : "text-red-600");
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  });
+</script>
