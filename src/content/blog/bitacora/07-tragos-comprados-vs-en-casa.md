@@ -1,5 +1,6 @@
 ---
 title: "Tragos comprados vs. tragos preparados en casa"
+slug: "tragos-comprados-vs-en-casa"
 date: 2026-04-01
 updated: 2026-04-01
 type: "bitacora"

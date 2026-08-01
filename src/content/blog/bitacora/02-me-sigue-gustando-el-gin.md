@@ -42,4 +42,4 @@ No he descartado el gin. Pero ahora sé que si lo voy a usar, será en tragos do
 
 Lo mismo me pasó con el Saketini cuando lo preparé por primera vez: el resultado fue muy intenso, algo chocante, pero ahora entiendo mejor **por qué fue así** y qué esperaba yo del trago en ese momento. A veces uno necesita pasar por esa incomodidad para entender lo que le gusta y lo que no.
 
-Y si no vuelvo a conectar con el gin como antes, tampoco pasa nada. Como dijo alguien: *“A veces no es el trago lo que te gusta, es el disfraz que le pusiste. Y eso también vale, si sabés lo que estás tomando.”*
+Y si no vuelvo a conectar con el gin como antes, tampoco pasa nada. Como dijo alguien: *“A veces no es el trago lo que te gusta, es el disfraz que le pusiste. Y eso también vale, si sabes lo que estás tomando.”*

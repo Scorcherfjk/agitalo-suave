@@ -51,7 +51,7 @@ Inspirado en el Negroni, pero con un giro peruano: lleva pisco, vermouth rosso y
 
 ### Mistela Spritz
 
-Una versión libre del Aperol Spritz, con pisco, zumo de naranja, mistela del mar y Cinzano Spritz para completar. Se sirvió directamente en una copa grande, sin agitar, dejando que cada capa se asentara naturalmente. El garnish fue una media rodaja de naranja colocada dentro de la copa, aportando aroma y un toque visual de frescura que flotaba entre las burbujas. El sabor era ligero y afrutado, con una burbuja amable. Fue el más refrescante de los tres, ideal para tomar al sol o como bienvenida en una reunión.
+Una versión libre del Aperol Spritz, con pisco, jugo de naranja, mistela del mar y Cinzano Spritz para completar. Se sirvió directamente en una copa grande, sin agitar, dejando que cada capa se asentara naturalmente. El garnish fue una media rodaja de naranja colocada dentro de la copa, aportando aroma y un toque visual de frescura que flotaba entre las burbujas. El sabor era ligero y afrutado, con una burbuja amable. Fue el más refrescante de los tres, ideal para tomar al sol o como bienvenida en una reunión.
 
 </div>
 <div>
@@ -66,7 +66,7 @@ Una versión libre del Aperol Spritz, con pisco, zumo de naranja, mistela del ma
 
 ### Peruvian Punch
 
-Mi favorito de la noche. Un trago frutal, dulce y tropical, con aires tiki y sabor a trópico peruano. Llevaba pisco, Aperol, zumo de maracuyá y crema de coco, una combinación que resultó en un equilibrio entre lo ácido, lo dulce y lo cremoso. Esta vez sí usamos el shaker, lo que aportó textura y cuerpo a la mezcla. El garnish fue una rodaja de limón deshidratado acompañada de una flor pequeña en el borde del vaso. El trago tenía color, volumen, aroma y un perfil que invitaba a tomarlo lento. Fue el cierre perfecto de la experiencia.
+Mi favorito de la noche. Un trago frutal, dulce y tropical, con aires tiki y sabor a trópico peruano. Llevaba pisco, Aperol, jugo de maracuyá y crema de coco, una combinación que resultó en un equilibrio entre lo ácido, lo dulce y lo cremoso. Esta vez sí usamos el shaker, lo que aportó textura y cuerpo a la mezcla. El garnish fue una rodaja de limón deshidratado acompañada de una flor pequeña en el borde del vaso. El trago tenía color, volumen, aroma y un perfil que invitaba a tomarlo lento. Fue el cierre perfecto de la experiencia.
 
 </div>
 <div>
