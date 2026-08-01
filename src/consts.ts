@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = 'Agítalo Suave';
 export const SITE_DESCRIPTION = 'Explorando el mundo de los cócteles, a mi ritmo';
+export const PAGE_SIZE = 12;

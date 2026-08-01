@@ -1,0 +1,126 @@
+---
+import type { Page } from "astro";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  page: Page;
+}
+
+const { page } = Astro.props;
+
+const basePath =
+  page.currentPage === 1
+    ? page.url.current.replace(/\/$/, "")
+    : page.url.current.replace(/\/[^/]+$/, "");
+
+const pageHref = (n: number) => (n === 1 ? basePath : `${basePath}/${n}`);
+
+const allPages = Array.from({ length: page.lastPage }, (_, i) => i + 1);
+
+const mobilePages =
+  page.lastPage > 3
+    ? Array.from({ length: 3 }, (_, i) => {
+        const start = Math.min(
+          Math.max(page.currentPage - 1, 1),
+          page.lastPage - 2
+        );
+        return start + i;
+      })
+    : allPages;
+
+const navLinkClass =
+  "inline-flex items-center gap-2 rounded-sm border border-accent px-4 py-2 text-sm font-medium text-accent transition hover:bg-accent hover:text-white";
+const navLinkDisabledClass = `${navLinkClass} pointer-events-none opacity-40`;
+const pageLinkClass =
+  "flex size-9 items-center justify-center rounded-sm border text-sm transition";
+---
+
+{
+  page.lastPage > 1 && (
+    <nav aria-label="Paginación" class="mt-12">
+      <div class="flex items-center justify-center gap-2">
+        {
+          page.url.prev ? (
+            <a href={page.url.prev} class={navLinkClass}>
+              <Icon name="arrow-right" class="h-4 w-4 rotate-180" />
+              <span class="sr-only">Página anterior</span>
+              Anterior
+            </a>
+          ) : (
+            <span class={navLinkDisabledClass} aria-disabled="true">
+              <Icon name="arrow-right" class="h-4 w-4 rotate-180" />
+              <span class="sr-only">Página anterior</span>
+              Anterior
+            </span>
+          )
+        }
+
+        <ul class="hidden items-center gap-2 md:flex">
+          {allPages.map((n) => (
+            <li>
+              {
+                n === page.currentPage ? (
+                  <a
+                    href={pageHref(n)}
+                    aria-current="page"
+                    class={`${pageLinkClass} border-accent bg-accent text-white`}
+                  >
+                    {n}
+                  </a>
+                ) : (
+                  <a
+                    href={pageHref(n)}
+                    class={`${pageLinkClass} border-accent text-accent hover:bg-accent hover:text-white`}
+                  >
+                    {n}
+                  </a>
+                )
+              }
+            </li>
+          ))}
+        </ul>
+
+        <ul class="flex items-center gap-2 md:hidden">
+          {mobilePages.map((n) => (
+            <li>
+              {
+                n === page.currentPage ? (
+                  <a
+                    href={pageHref(n)}
+                    aria-current="page"
+                    class={`${pageLinkClass} border-accent bg-accent text-white`}
+                  >
+                    {n}
+                  </a>
+                ) : (
+                  <a
+                    href={pageHref(n)}
+                    class={`${pageLinkClass} border-accent text-accent hover:bg-accent hover:text-white`}
+                  >
+                    {n}
+                  </a>
+                )
+              }
+            </li>
+          ))}
+        </ul>
+
+        {
+          page.url.next ? (
+            <a href={page.url.next} class={navLinkClass}>
+              <span class="sr-only">Página siguiente</span>
+              Siguiente
+              <Icon name="arrow-right" class="h-4 w-4" />
+            </a>
+          ) : (
+            <span class={navLinkDisabledClass} aria-disabled="true">
+              <span class="sr-only">Página siguiente</span>
+              Siguiente
+              <Icon name="arrow-right" class="h-4 w-4" />
+            </span>
+          )
+        }
+      </div>
+    </nav>
+  )
+}
