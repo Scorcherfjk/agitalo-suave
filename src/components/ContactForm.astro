@@ -1,14 +1,41 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <section class="bg-background">
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       <div class="lg:col-span-2 lg:py-12">
-        <p class="max-w-xl text-lg">
-          <span></span>
-          <strong>¿Tienes una duda, sugerencia o solo quieres saludar?</strong>
-          Escríbeme usando este formulario y te responderé tan pronto como pueda.
-          No soy un bar abierto 24/7, pero siempre estoy atento a nuevos brindis
-          y buenas conversaciones.
+        <h2 class="text-2xl font-bold text-complementary md:text-3xl">
+          Escríbeme con calma
+        </h2>
+        <p class="mt-4 max-w-xl text-lg">
+          El formulario es la forma más directa de llegar a mí. No soy un bar
+          abierto 24/7, pero siempre estoy atento a nuevos brindis y buenas
+          conversaciones.
         </p>
+        <p class="mt-6 text-sm text-gray-600">También puedes encontrarme en las redes:</p>
+        <ul class="mt-3 flex gap-6">
+          {
+            [
+              { url: "https://www.facebook.com/agitalosuave", label: "Facebook", icon: "facebook" },
+              { url: "https://www.instagram.com/agitalosuave", label: "Instagram", icon: "instagram" },
+              { url: "https://www.tiktok.com/@agitalosuave", label: "TikTok", icon: "tiktok" },
+            ].map((link) => (
+              <li>
+                <a
+                  href={link.url}
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label={link.label}
+                  class="text-accent transition hover:text-complementary"
+                >
+                  <Icon name={link.icon} class="size-6" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
 
       <div
@@ -20,36 +47,52 @@
           action="/gracias"
           method="POST"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contacto" />
+          <p class="hidden" aria-hidden="true">
+            <label>
+              No rellenar este campo:
+              <input name="bot-field" tabindex="-1" autocomplete="off" />
+            </label>
+          </p>
+
           <div>
-            <label class="sr-only" for="name">Nombre completo</label>
+            <label for="name" class="block text-sm font-medium text-gray-700">
+              Nombre completo
+            </label>
             <input
-              class="w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
-              placeholder="Nombre completo"
+              class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+              placeholder="Tu nombre"
               type="text"
               id="name"
               name="name"
+              required
             />
           </div>
 
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
-              <label class="sr-only" for="email">Email</label>
+              <label for="email" class="block text-sm font-medium text-gray-700">
+                Email
+              </label>
               <input
-                class="w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
-                placeholder="Email"
+                class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+                placeholder="tucorreo@ejemplo.com"
                 type="email"
                 id="email"
                 name="email"
+                required
               />
             </div>
 
             <div>
-              <label class="sr-only" for="phone">Telefono</label>
+              <label for="phone" class="block text-sm font-medium text-gray-700">
+                Teléfono <span class="font-normal text-gray-500">(opcional)</span>
+              </label>
               <input
-                class="w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
-                placeholder="Telefono"
+                class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+                placeholder="+51 999 999 999"
                 type="tel"
                 id="phone"
                 name="phone"
@@ -57,10 +100,24 @@
             </div>
           </div>
 
-          <div class="mt-4">
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">
+              Tu mensaje
+            </label>
+            <textarea
+              class="mt-1 w-full rounded-lg border border-gray-200 p-3 text-sm outline-complementary"
+              placeholder="Cuéntame tu duda, sugerencia o saludo..."
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <div class="pt-2">
             <button
               type="submit"
-              class="inline-block w-full rounded-sm bg-complementary px-5 py-3 font-medium text-white sm:w-auto"
+              class="inline-block w-full rounded-sm bg-complementary px-5 py-3 font-medium text-white transition hover:bg-accent sm:w-auto"
             >
               Enviar
             </button>
