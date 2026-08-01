@@ -1,4 +1,6 @@
 ---
+import { getHeroButtons } from "../utils/hero";
+
 interface Props {
   title: string;
   description: string;
@@ -18,6 +20,14 @@ const {
   primaryButtonHref = "/recetas",
   secondaryButtonHref = "/contacto",
 } = Astro.props;
+
+const buttons = getHeroButtons(
+  hasButtons,
+  primaryButtonText,
+  secondaryButtonText,
+  primaryButtonHref,
+  secondaryButtonHref,
+);
 ---
 
 <section
@@ -40,24 +50,24 @@ const {
         {description}
       </p>
       {
-        hasButtons && (
+        buttons.length > 0 && (
           <div class="mt-8 flex flex-wrap gap-4 text-center">
-            {primaryButtonText && (
-              <a
-                href={primaryButtonHref}
-                class="block w-full rounded-sm bg-primary px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-accent focus:ring-3 focus:outline-hidden sm:w-auto"
-              >
-                {primaryButtonText}
-              </a>
-            )}
-
-            {secondaryButtonText && (
-              <a
-                href={secondaryButtonHref}
-                class="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-primary shadow-sm hover:text-accent focus:ring-3 focus:outline-hidden sm:w-auto"
-              >
-                {secondaryButtonText}
-              </a>
+            {buttons.map((button) =>
+              button.variant === "primary" ? (
+                <a
+                  href={button.href}
+                  class="block w-full rounded-sm bg-primary px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-accent focus:ring-3 focus:outline-hidden sm:w-auto"
+                >
+                  {button.text}
+                </a>
+              ) : (
+                <a
+                  href={button.href}
+                  class="block w-full rounded-sm bg-white px-12 py-3 text-sm font-medium text-primary shadow-sm hover:text-accent focus:ring-3 focus:outline-hidden sm:w-auto"
+                >
+                  {button.text}
+                </a>
+              ),
             )}
           </div>
         )

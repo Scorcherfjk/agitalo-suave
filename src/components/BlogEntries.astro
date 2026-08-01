@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import BlogCard from "./BlogCard.astro";
 import { getCollection } from "astro:content";
+import { getRelatedPosts } from "../utils/related";
 
 interface Props {
   max?: number;
@@ -11,11 +12,7 @@ const { max = 3 } = Astro.props;
 const { slug } = Astro.params;
 
 const blogPosts = await getCollection("blog");
-const blogEntries = blogPosts
-  .filter((post) => !post.data.draft)
-  .filter((post) => post.id !== slug)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, max);
+const blogEntries = getRelatedPosts(blogPosts, slug, max);
 ---
 
 <section class="no-print bg-background-alt">
