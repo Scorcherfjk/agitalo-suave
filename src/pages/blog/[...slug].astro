@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 import BlogLayout from "../../layouts/BlogLayout.astro";
 import { formatDate, getReadingTime } from "../../utils";
+import { getCategoryLink, getPostJsonLd } from "../../utils/seo";
 import Alert from "../../components/Alert.astro";
 import BlogEntries from "../../components/BlogEntries.astro";
 import ShareButtons from "../../components/ShareButtons.astro";
@@ -28,40 +29,12 @@ const typeLabel: Record<string, string> = {
   tip: "Tip",
 };
 
-const categoryLinks: Record<string, { label: string; url: string }> = {
-  recetas: { label: "Recetas", url: "/recetas" },
-  bitacora: { label: "Bitácora", url: "/bitacora" },
-  tecnicas: { label: "Técnicas", url: "/tecnica" },
-  tips: { label: "Tips", url: "/tips" },
-};
-
 const [category] = post.id.split("/");
-const categoryLink = categoryLinks[category];
+const categoryLink = getCategoryLink(category);
 
 const readingTime = getReadingTime(post.body);
 
-const jsonLd =
-  type === "receta" && post.data.ingredients?.length && post.data.steps?.length
-    ? JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Recipe",
-        name: title,
-        description: excerpt,
-        image: [headerImage],
-        url: new URL(`/blog/${post.id}`, Astro.site).toString(),
-        datePublished: date.toISOString(),
-        dateModified: updated.toISOString(),
-        author: { "@type": "Person", name: "Agítalo Suave" },
-        recipeCategory: "Cóctel",
-        recipeCuisine: "Cócteles",
-        recipeIngredient: post.data.ingredients,
-        recipeInstructions: post.data.steps.map((step) => ({
-          "@type": "HowToStep",
-          text: step,
-        })),
-        keywords: tags.join(", "),
-      })
-    : undefined;
+const { jsonLd, breadcrumbJsonLd } = getPostJsonLd(post, Astro.site);
 
 const { Content } = await render(post);
 ---
@@ -72,6 +45,7 @@ const { Content } = await render(post);
   tags={tags}
   imageUrl={headerImage}
   jsonLd={jsonLd}
+  breadcrumbJsonLd={breadcrumbJsonLd}
 >
   <section class="no-print relative overflow-hidden">
     <Image

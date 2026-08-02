@@ -1,79 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import NewsletterForm from "../NewsletterForm.astro";
-
-const RRSS = [
-  {
-    url: "https://www.facebook.com/agitalosuave",
-    label: "Facebook",
-    icon: "facebook",
-  },
-  {
-    url: "https://www.instagram.com/agitalosuave",
-    label: "Instagram",
-    icon: "instagram",
-  },
-  {
-    url: "https://www.tiktok.com/@agitalosuave",
-    label: "TikTok",
-    icon: "tiktok",
-  },
-];
-
-const links = [
-  {
-    title: "Blog",
-    children: [
-      {
-        url: "/recetas",
-        label: "Recetas",
-      },
-      {
-        url: "/bitacora",
-        label: "Bitácora",
-      },
-      {
-        url: "/tecnica",
-        label: "Técnica",
-      },
-      {
-        url: "/tips",
-        label: "Tips",
-      },
-    ],
-  },
-  {
-    title: "Acerca de",
-    children: [
-      { url: "/acerca", label: "Agítalo Suave" },
-      {
-        url: "/legal/sobre-mi",
-        label: "Sobre mi",
-      },
-      {
-        url: "/contacto",
-        label: "Contacto",
-      },
-    ],
-  },
-  {
-    title: "Legal",
-    children: [
-      {
-        url: "/legal/politica-de-privacidad",
-        label: "Política de Privacidad",
-      },
-      {
-        url: "/legal/terminos-y-condiciones",
-        label: "Términos y Condiciones",
-      },
-      {
-        url: "/legal/exencion-de-responsabilidad",
-        label: "Exención de Responsabilidad",
-      },
-    ],
-  },
-];
+import { SOCIAL_LINKS, FOOTER_LINKS } from "../../consts";
 
 const year = new Date().getFullYear();
 ---
@@ -102,7 +30,7 @@ const year = new Date().getFullYear();
         </div>
         <ul class="mt-8 flex gap-6">
           {
-            RRSS.map((link) => (
+            SOCIAL_LINKS.map((link) => (
               <li>
                 <a
                   href={link.url}
@@ -124,7 +52,7 @@ const year = new Date().getFullYear();
       >
         <div></div>
         {
-          links.map((link) => (
+          FOOTER_LINKS.map((link) => (
             <div>
               <p class="font-medium text-white">{link.title}</p>
 

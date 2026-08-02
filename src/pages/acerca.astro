@@ -3,6 +3,7 @@ import CallToAction from "../components/CallToAction.astro";
 import Hero from "../components/Hero.astro";
 import AboutIt from "../components/AboutIt.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import { getPersonJsonLd } from "../utils/seo";
 import type { CTA } from "../interfaces";
 
 import cta1 from "../assets/cta-index-1.avif";
@@ -67,7 +68,7 @@ const announcement = {
 };
 ---
 
-<MainLayout title="Sobre">
+<MainLayout title="Sobre" jsonLd={getPersonJsonLd(Astro.site)}>
   <Hero
     title="Agítalo Suave"
     description="Explorando el mundo de los cócteles, a mi ritmo"

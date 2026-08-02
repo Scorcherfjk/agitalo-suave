@@ -8,9 +8,10 @@ import BaseHead from "./BaseHead.astro";
 interface LayoutProps {
   title: string;
   description: string;
+  jsonLd?: string;
 }
 
-const { title, description } = Astro.props as LayoutProps;
+const { title, description, jsonLd } = Astro.props as LayoutProps;
 const imageUrl = new URL("/placeholder.jpg", Astro.site).toString();
 ---
 
@@ -19,6 +20,7 @@ const imageUrl = new URL("/placeholder.jpg", Astro.site).toString();
   <head>
     <Analytics />
     <BaseHead title={title} imageUrl={imageUrl} description={description} />
+    {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
   </head>
   <body>
     <Navbar />

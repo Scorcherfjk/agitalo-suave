@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import { SOCIAL_LINKS } from "../consts";
 ---
 
 <section class="bg-background">
@@ -17,11 +18,7 @@ import { Icon } from "astro-icon/components";
         <p class="mt-6 text-sm text-gray-600 dark:text-gray-300">También puedes encontrarme en las redes:</p>
         <ul class="mt-3 flex gap-6">
           {
-            [
-              { url: "https://www.facebook.com/agitalosuave", label: "Facebook", icon: "facebook" },
-              { url: "https://www.instagram.com/agitalosuave", label: "Instagram", icon: "instagram" },
-              { url: "https://www.tiktok.com/@agitalosuave", label: "TikTok", icon: "tiktok" },
-            ].map((link) => (
+            SOCIAL_LINKS.map((link) => (
               <li>
                 <a
                   href={link.url}
