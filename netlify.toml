@@ -215,3 +215,10 @@
   from = "/blog/tips/01-sirope-simple-casero/"
   to = "/blog/tips/sirope-simple-casero/"
   status = 301
+
+# Feed RSS: Netlify sirve .xml como application/xml; forzamos el tipo correcto
+# para que lectores y validadores lo reconozcan como feed.
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Content-Type = "application/rss+xml; charset=utf-8"
