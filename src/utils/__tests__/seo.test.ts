@@ -37,6 +37,16 @@ describe("seo", () => {
     expect(parsed.recipeIngredient).toHaveLength(2);
     expect(parsed.recipeInstructions[0]["@type"]).toBe("HowToStep");
     expect(parsed.datePublished).toBe("2025-06-23T00:00:00.000Z");
+    expect(parsed.url).toBe("https://agitalosuave.com/blog/recetas/mojito-clasico/");
+  });
+
+  it("usa Organization con url como autor", () => {
+    const { jsonLd } = getPostJsonLd(makePost(), siteUrl);
+    const parsed = JSON.parse(jsonLd);
+
+    expect(parsed.author["@type"]).toBe("Organization");
+    expect(parsed.author.name).toBe("Agítalo Suave");
+    expect(parsed.author.url).toBe("https://agitalosuave.com/");
   });
 
   it("genera BlogPosting sin campos de receta para bitácora", () => {
@@ -58,9 +68,11 @@ describe("seo", () => {
 
     expect(parsed["@type"]).toBe("BreadcrumbList");
     expect(parsed.itemListElement).toHaveLength(3);
+    expect(parsed.itemListElement[0].item).toBe("https://agitalosuave.com/");
     expect(parsed.itemListElement[1].name).toBe("Recetas");
-    expect(parsed.itemListElement[2].item).toContain(
-      "/blog/recetas/mojito-clasico",
+    expect(parsed.itemListElement[1].item).toBe("https://agitalosuave.com/recetas/");
+    expect(parsed.itemListElement[2].item).toBe(
+      "https://agitalosuave.com/blog/recetas/mojito-clasico/",
     );
   });
 
@@ -87,7 +99,7 @@ describe("seo", () => {
     const parsed = JSON.parse(getPersonJsonLd(siteUrl));
 
     expect(parsed["@type"]).toBe("Person");
-    expect(parsed.url).toContain("/acerca");
+    expect(parsed.url).toBe("https://agitalosuave.com/acerca/");
     expect(parsed.sameAs).toHaveLength(3);
   });
 });
