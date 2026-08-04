@@ -1,68 +1,108 @@
-# Astro Starter Kit: Blog
+# 🍹 Agítalo Suave
 
-```sh
-pnpm create astro@latest -- --template blog
-```
+> Blog y web de coctelería y mixología. Sitio estático (Astro) que se sirve 100% del CMS **Strapi** (`agitalo-suave-cms`): no hay contenido local, todo el blog y las páginas legales vienen de la API.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## ✨ Características
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Contenido desde el CMS** — los loaders de `astro:content` (`src/lib/cms/`) traen blog y legales desde Strapi en cada build.
+- **Categorías de contenido** — recetas, bitácora, técnicas y tips, con su propio listado paginado (`/blog/recetas`, `/bitacora`, `/tecnica`, `/tips`).
+- **Imágenes en la nube** — la media la sirve Cloudinary en formato **AVIF**, vía la Media Library del CMS.
+- **SEO completo** — canonical URLs, OpenGraph, JSON-LD (recetas con `Recipe` schema), sitemap y feed **RSS** (`/rss.xml`).
+- **Alto rendimiento** — estático, optimización de imágenes y 100/100 Lighthouse.
+- **Diseño con Tailwind CSS 4** y set de iconos (`astro-icon`).
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+## 🧱 Stack
 
-Features:
+| Capa | Tecnología |
+| --- | --- |
+| Framework | [Astro](https://astro.build) 7 (content layer) |
+| Estilos | Tailwind CSS 4 (`@tailwindcss/vite`) |
+| Contenido | Strapi 5 vía loaders + schemas (`zod`) |
+| Imágenes | Cloudinary (AVIF) |
+| Deploy | Netlify (adapter `@astrojs/netlify`) |
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## 📁 Estructura
 
 ```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+src/
+├── components/      # Componentes Astro (cards, layouts parciales, íconos)
+├── content.config.ts# Definición de colecciones + schemas de blog/legal
+├── icons/           # Iconos SVG
+├── layouts/         # Layouts de página (base, blog, legal…)
+├── lib/cms/         # Loaders de Strapi
+│   ├── constants.ts # URLs, tamaños de página, categorías
+│   ├── types.ts     # Tipos de la API y del loader
+│   ├── client.ts    # Cliente HTTP (fetch paginado, media)
+│   ├── mappers.ts   # Strapi → entrada del content layer
+│   ├── loader.ts    # Factory del loader + loaders públicos
+│   └── index.ts     # Punto de entrada público
+├── pages/           # Rutas (index, blog, categorías, legal, rss…)
+├── schemas/         # Schemas zod (blog, legal)
+├── utils/           # SEO, fechas, reading time (+ tests)
+└── assets/          # Recursos estáticos
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## ⚙️ Configuración
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Instalar dependencias:
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+   ```sh
+   pnpm install
+   ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+2. Copiar `.env.example` a `.env`:
 
-## 🧞 Commands
+   ```sh
+   cp .env.example .env
+   ```
 
-All commands are run from the root of the project, from a terminal:
+   | Variable | Descripción |
+   | --- | --- |
+   | `CMS_URL` | URL base de la API del CMS. Local: `http://localhost:1337` · Producción: `https://cms.agitalosuave.com` |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+3. El CMS debe estar corriendo (o ser accesible) para `astro dev` y `astro build`, ya que el contenido se consume de la API.
 
-## 👀 Want to learn more?
+## 🚀 Comandos
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Comando | Acción |
+| --- | --- |
+| `pnpm install` | Instala dependencias |
+| `pnpm dev` | Dev server en `http://localhost:4321` |
+| `pnpm build` | Build de producción a `dist/` |
+| `pnpm preview` | Previsualiza el build localmente |
+| `pnpm test` | Ejecuta los tests (Vitest) |
 
-## Credit
+## 📝 Contenido
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+El contenido se gestiona desde el **admin del CMS** (`agitalo-suave-cms`). Las colecciones se definen en `src/content.config.ts` y se mapean 1:1 con los tipos de Strapi:
+
+- **`blog`** — `title`, `slug`, `type` (`receta` · `bitacora` · `tecnica` · `tip`), `date`, `updated`, `excerpt`, `tags`, `image`/`headerImage`, `ingredients`, `steps`, `draft`, `featured` y `content` (markdown).
+- **`legal`** — `title`, `slug`, `description`, `date`, `draft` y `content` (markdown).
+
+> El markdown de `content` lo compila el núcleo de Astro (`renderMarkdown`) dentro del loader; por eso no se necesita ningún archivo local ni la integración MDX.
+
+### Publicar contenido → nuevo build
+
+El CMS dispara un webhook hacia el **build hook de Netlify** al crear/editar/borrar una entrada, así el sitio se regenera automáticamente con los cambios.
+
+## 🌐 Deploy
+
+- **Front** — Netlify (ramas de `main`, `netlify.toml` define `npm run build` y `dist/`).
+- **Env de producción** — `CMS_URL=https://cms.agitalosuave.com` en las variables de entorno del build.
+- **CMS** — desplegado en Render (`cms.agitalosuave.com`), con datos en Supabase (PostgreSQL) e imágenes en Cloudinary. Ver `agitalo-suave-cms`.
+
+## 🧪 Tests
+
+Suite con [Vitest](https://vitest.dev) en `src/**/__tests__`: SEO, formateo de fechas, reading time y schema de blog.
+
+```sh
+pnpm test
+```
+
+## 🔗 Repos relacionados
+
+- **`agitalo-suave-cms`** — CMS Strapi que alimenta este sitio (config, Supabase, Cloudinary, deploy en Render).
+
+---
+
+Hecho con 🧉 y coctelera por **Agítalo Suave** — [agitalosuave.com](https://agitalosuave.com)
