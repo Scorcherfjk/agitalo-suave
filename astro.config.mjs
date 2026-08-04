@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import netlify from "@astrojs/netlify";
 import tailwindcss from "@tailwindcss/vite";
@@ -16,6 +15,6 @@ export default defineConfig({
   image: {
     domains: ["res.cloudinary.com"],
   },
-  integrations: [mdx(), sitemap(), icon()],
+  integrations: [sitemap(), icon()],
   adapter: netlify(),
 });
